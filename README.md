@@ -1,2 +1,2 @@
 # az-itelet-labirintusa
-Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum és Kollégium közös csoportmunka 
+Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum csoportmunka projektfeldat
