@@ -16,5 +16,18 @@ namespace az_itelet_labririntusa
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            this.ugyesseg.Text = "\tÜGYESSÉG\n\tKezdeti ügyesség:";
+            
+            
+            
+
+
+        }
+
+        
     }
 }

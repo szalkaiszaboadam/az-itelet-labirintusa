@@ -1,0 +1,11 @@
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\bin\Debug\az-itelet-labririntusa.exe.config
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\bin\Debug\az-itelet-labririntusa.exe
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\bin\Debug\az-itelet-labririntusa.pdb
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.csproj.AssemblyReference.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.csproj.SuggestedBindingRedirects.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az_itelet_labririntusa.Form1.resources
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az_itelet_labririntusa.Properties.Resources.resources
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.csproj.GenerateResource.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.csproj.CoreCompileInputs.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.exe
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\az-itelet-labririntusa\obj\Debug\az-itelet-labririntusa.pdb
