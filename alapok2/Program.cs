@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace az_itelet_labirintusa2
+namespace alapok2
 {
     internal static class Program
     {

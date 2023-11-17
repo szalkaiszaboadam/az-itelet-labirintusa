@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace az_itelet_labirintusa2.Properties
+namespace alapok2.Properties
 {
 
 

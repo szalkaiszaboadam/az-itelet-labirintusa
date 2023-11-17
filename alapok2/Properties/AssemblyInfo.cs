@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("az-itelet-labirintusa2")]
+[assembly: AssemblyTitle("alapok2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("az-itelet-labirintusa2")]
+[assembly: AssemblyProduct("alapok2")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fd090483-2082-494c-8701-94cd994a68ea")]
+[assembly: Guid("f10dd00f-31fc-45fb-b864-2a745c1ffaf9")]
 
 // Version information for an assembly consists of the following four values:
 //
