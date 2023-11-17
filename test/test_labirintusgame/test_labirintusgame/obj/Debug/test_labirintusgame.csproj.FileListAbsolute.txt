@@ -1,0 +1,8 @@
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\bin\Debug\test_labirintusgame.exe.config
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\bin\Debug\test_labirintusgame.exe
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\bin\Debug\test_labirintusgame.pdb
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\obj\Debug\test_labirintusgame.csproj.AssemblyReference.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\obj\Debug\test_labirintusgame.csproj.SuggestedBindingRedirects.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\obj\Debug\test_labirintusgame.csproj.CoreCompileInputs.cache
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\obj\Debug\test_labirintusgame.exe
+C:\Users\NagyGabor1\Documents\GitHub\az-itelet-labirintusa\test\test_labirintusgame\test_labirintusgame\obj\Debug\test_labirintusgame.pdb
