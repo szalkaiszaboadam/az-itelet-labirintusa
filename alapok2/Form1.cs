@@ -18,7 +18,6 @@ namespace alapok2
         public int gombSzeles = 60;
         public int gombTavol = 20;
 
-        public List<Button> gombok = new List<Button>();
         public List<Label> cimkek = new List<Label>();*/
 
 
@@ -30,7 +29,7 @@ namespace alapok2
 
             /*this.CenterToScreen();*/
 
-            this.BackColor = Color.FromArgb(0, 0, 0);
+       
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -42,7 +41,7 @@ namespace alapok2
             //this.Width = 200;
             //this.Height = gombokSz * (gombMagas + gombTavol) + gombTavol;
 
-            this.StartPosition = FormStartPosition.CenterScreen;
+   
             /*this.BackgroundImage = Image.FromFile(@"C:\Users\Szalkai-SzaboAdam\Downloads\Szalkai-SzaboAdamFeladat20231012\alapok\bin\Debug\hatter.png")*/
             ;
 
@@ -62,11 +61,8 @@ namespace alapok2
                 Controls.Add(tmp);
             }*/
 
-
-
-            Button ki = new Button();
-            ki.Text = "Kilépés";
-            ki.Height = 30;
+           
+  
 
             /*
 
@@ -102,21 +98,45 @@ namespace alapok2
              }
 
          }*/
-        } 
-            static public void Main()
-            {
-                Application.Run(new Form1());
-            }
-
-            /*
-        private void Button_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Gomb lenyomva");
         }
-        private void kiGomb(object sender, EventArgs e)
+        /*  static public void Main()
+          {
+              Application.Run(new Form1());
+          }*/
+
+        /*
+    private void Button_Click(object sender, EventArgs e)
+    {
+        MessageBox.Show("Gomb lenyomva");
+    }
+
+
+
+    private void kiGomb(object sender, EventArgs e)
+    {
+        Application.Exit();
+    }*/
+
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Application.Exit();
-        }*/
-        
+            Button testbutton = new Button();
+            testbutton.Text = "button1";
+            testbutton.Location = new Point(70, 70);
+            testbutton.Size = new Size(100, 100);
+            testbutton.Visible = true;
+            testbutton.BringToFront();
+            this.Controls.Add(testbutton);
+        }
+
+
+
+        private void testbutton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+
+        }
+
+
     }
 }

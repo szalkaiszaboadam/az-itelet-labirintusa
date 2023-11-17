@@ -18,3 +18,4 @@ C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\alapok2\obj\De
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\alapok2\obj\Debug\alapok2.csproj.CoreCompileInputs.cache
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\alapok2\obj\Debug\alapok2.exe
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\alapok2\obj\Debug\alapok2.pdb
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\alapok2\obj\Debug\alapok2.Form1.resources
