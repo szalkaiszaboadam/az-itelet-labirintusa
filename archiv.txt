@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+
+namespace az_itelet_labirintusa2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+
+            InitializeComponent();
+            
+            /*WindowState = FormWindowState.Maximized;*/
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.CenterToScreen();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.BackColor = Color.FromArgb(230, 206, 172);
+            logoSzoveg.ForeColor = Color.FromArgb(41, 36, 24);
+            /*logoSzoveg.Font = new Font("Arial", 24, FontStyle.Bold);*/
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile("Baskic8.otf");
+            foreach (Control c in this.Controls)
+            {
+                c.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+            }
+
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+           
+        }
+
+    }
+}
