@@ -64,9 +64,9 @@ namespace alapok2
 
 
 
-             Button ki = new Button();
-             ki.Text = "Kilépés";
-             ki.Height = 30;
+            Button ki = new Button();
+            ki.Text = "Kilépés";
+            ki.Height = 30;
 
             /*
 
@@ -102,11 +102,11 @@ namespace alapok2
              }
 
          }*/
-
-            /*static public void Main()
+        } 
+            static public void Main()
             {
                 Application.Run(new Form1());
-            }*/
+            }
 
             /*
         private void Button_Click(object sender, EventArgs e)
@@ -117,6 +117,6 @@ namespace alapok2
         {
             Application.Exit();
         }*/
-        }
+        
     }
 }
