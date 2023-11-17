@@ -1,1 +1,0 @@
-(string)szoveg,(bool)szerencse,(string)szorny1nev,(int) szorny1ugyesseg,(int)szorny1eleterö(string)szorny2nev,(int) szorny2ugyesseg,(int)szorny2eleterö,(int)lapoz1,(int)lapoz2
