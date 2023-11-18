@@ -24,10 +24,7 @@ namespace az_itelet_labirintusa
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-
-
+        { 
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -52,7 +49,7 @@ namespace az_itelet_labirintusa
             //button2.BackColor = Color.FromArgb(21, 255, 255);
 
             //button1.Text = "Uj Játék";
-            button2.Text = "Uj Jatek";
+            button1.Text = "Uj Jatek";
             //button2.Text = "Kilépés";
             button2.Text = "Kilepes";
             //label1.Text = "Készítette Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
