@@ -19,12 +19,15 @@ namespace az_itelet_labirintusa
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+           //this.BackColor = Color.FromArgb(0, 0, 0);
             this.Text = "Az Ítélet Labirintusa";
             WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+
         }
+
+
     }
 }
