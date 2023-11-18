@@ -10,3 +10,15 @@ C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labi
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form2.resources
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.exe.config
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.exe
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.pdb
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.AssemblyReference.cache
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.SuggestedBindingRedirects.cache
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form1.resources
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form2.resources
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Properties.Resources.resources
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.GenerateResource.cache
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.CoreCompileInputs.cache
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
