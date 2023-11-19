@@ -33,40 +33,49 @@ namespace az_itelet_labirintusa
             ClientSize = new Size(450, 300);
             Width = 450;
             Height = 320;
-            this.BackColor = Color.FromArgb(0, 0, 0);
+            //this.BackColor = Color.FromArgb(0, 0, 0);
+            this.BackColor = Color.FromArgb(255, 255, 255);
 
             var pfc = new PrivateFontCollection();
-            pfc.AddFontFile("Bitmgothic.ttf"); 
-            label3.Font = new Font(pfc.Families[0], 33, FontStyle.Bold);
-            label3.Text = "Az Itelet\nLabirintusa";
-            label3.ForeColor = Color.FromArgb(255, 255, 255);
+            pfc.AddFontFile("Bitmgothic.ttf");  //Bitmgothic.ttf
+            label3.Font = new Font(pfc.Families[0], 34, FontStyle.Regular);
+            label3.Text = " Az Itelet\nLabirintusa";
+            //label3.ForeColor = Color.FromArgb(255, 255, 255);
+            label3.ForeColor = Color.FromArgb(0, 0, 00);
 
             var pfc2 = new PrivateFontCollection();
             pfc2.AddFontFile("Pixel Millennium.ttf");
-            //button1.Font = new Font("Courier New", 7, FontStyle.Regular);
-            button1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+              
+         
+            button1.Font = new Font("Courier New", 8, FontStyle.Regular);
+            button2.Font = new Font("Courier New", 8, FontStyle.Regular);
+            label1.Font = new Font("Courier New", 7, FontStyle.Regular);
+            label2.Font = new Font("Courier New", 7, FontStyle.Regular);
 
-            //button2.BackColor = Color.FromArgb(21, 255, 255);
+            /*button1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+            button2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
+            label1.Font = new Font(pfc2.Families[0], 9, FontStyle.Regular);
+            label2.Font = new Font(pfc2.Families[0], 9, FontStyle.Regular);*/
 
-            //button1.Text = "Uj Játék";
-            button1.Text = "Uj Jatek";
-            //button2.Text = "Kilépés";
-            button2.Text = "Kilepes";
-            //label1.Text = "Készítette Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
-            label1.Text = "Keszitette Nagy Gabor, Bodri David es Szalkai-Szabo Adam";
+            button1.Text = "Új Játék";
+            button2.Text = "Kilépés";  
+            label1.Text = "Készítette Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
+
+            /*button1.Text = "Uj Jatek";
+            button2.Text = "Kilepes";  
+            label1.Text = "Keszitette Nagy Gabor, Bodri David es Szalkai-Szabo Adam";*/
+
+
             label2.Text = "2023";
 
-            //button2.Font = new Font("Courier New", 7, FontStyle.Regular);
-            button2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
 
-            //label1.Font = new Font("Courier New", 6, FontStyle.Regular);
-            label1.Font = new Font(pfc2.Families[0], 9, FontStyle.Regular);
-            //label2.Font = new Font("Courier New", 6, FontStyle.Regular);
-            label2.Font = new Font(pfc2.Families[0], 9, FontStyle.Regular);
+            //button2.BackColor = Color.FromArgb(21, 255, 255);
+            /*label1.ForeColor = Color.FromArgb(255, 255, 255);
+            label2.ForeColor = Color.FromArgb(255, 255, 255);*/
 
-            label1.ForeColor = Color.FromArgb(255, 255, 255);
-            label2.ForeColor = Color.FromArgb(255, 255, 255);
-            
+            label1.ForeColor = Color.FromArgb(0, 0, 0);
+            label2.ForeColor = Color.FromArgb(0, 0, 0);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
