@@ -28,21 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(29, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 193);
+            this.panel1.Size = new System.Drawing.Size(1866, 802);
             this.panel1.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox1.Location = new System.Drawing.Point(566, 465);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox1.Size = new System.Drawing.Size(573, 253);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.richTextBox1.Location = new System.Drawing.Point(1316, 289);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(387, 275);
@@ -60,6 +76,8 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -67,5 +85,6 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

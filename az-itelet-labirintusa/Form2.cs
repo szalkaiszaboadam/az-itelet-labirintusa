@@ -33,7 +33,5 @@ namespace az_itelet_labirintusa
 
         }
 
-
-
     }
 }

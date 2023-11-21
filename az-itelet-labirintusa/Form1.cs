@@ -66,7 +66,7 @@ namespace az_itelet_labirintusa
             label1.Text = "Keszitette Nagy Gabor, Bodri David es Szalkai-Szabo Adam";*/
 
 
-            label2.Text = "2023";
+            label2.Text = "PG 2023";
 
 
             //button2.BackColor = Color.FromArgb(21, 255, 255);
