@@ -51,6 +51,7 @@ namespace az_itelet_labirintusa
             button2.Font = new Font("Courier New", 8, FontStyle.Regular);
             label1.Font = new Font("Courier New", 7, FontStyle.Regular);
             label2.Font = new Font("Courier New", 7, FontStyle.Regular);
+            label4.Font = new Font("Courier New", 7, FontStyle.Regular);
 
             /*button1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
             button2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
@@ -60,6 +61,7 @@ namespace az_itelet_labirintusa
             button1.Text = "Új Játék";
             button2.Text = "Kilépés";  
             label1.Text = "Készítette Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
+            label4.Text = "Írta Jonathan Ford";
 
             /*button1.Text = "Uj Jatek";
             button2.Text = "Kilepes";  
