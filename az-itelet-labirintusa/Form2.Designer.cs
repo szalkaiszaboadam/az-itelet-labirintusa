@@ -45,9 +45,7 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(942, 771);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Az ajtó egy nyugat felé haladó alagútba nyílik. Követed, míg egy elágazáshoz nem " +
-    "érsz. Ha észak felé akarsz fordulni, lapozz a 172-re. Ha nem akarsz letérni ebbő" +
-    "l a járatból. lapozz a 168-ra.";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // label1
             // 
