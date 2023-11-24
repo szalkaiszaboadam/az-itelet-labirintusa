@@ -49,9 +49,9 @@ namespace az_itelet_labirintusa
          
             button1.Font = new Font("Courier New", 8, FontStyle.Regular);
             button2.Font = new Font("Courier New", 8, FontStyle.Regular);
-            label1.Font = new Font("Courier New", 7, FontStyle.Regular);
-            label2.Font = new Font("Courier New", 7, FontStyle.Regular);
-            label4.Font = new Font("Courier New", 7, FontStyle.Regular);
+            label1.Font = new Font("Courier New", 8, FontStyle.Regular);
+            label2.Font = new Font("Courier New", 8, FontStyle.Regular);
+            label4.Font = new Font("Courier New", 8, FontStyle.Regular);
 
             /*button1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
             button2.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);
@@ -68,7 +68,7 @@ namespace az_itelet_labirintusa
             label1.Text = "Keszitette Nagy Gabor, Bodri David es Szalkai-Szabo Adam";*/
 
 
-            label2.Text = "PG 2023";
+            //label2.Text = "PG 2023";
 
 
             //button2.BackColor = Color.FromArgb(21, 255, 255);
