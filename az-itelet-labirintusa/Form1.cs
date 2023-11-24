@@ -60,8 +60,8 @@ namespace az_itelet_labirintusa
 
             button1.Text = "Új Játék";
             button2.Text = "Kilépés";  
-            label1.Text = "Készítette Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
-            label4.Text = "Írta Jonathan Ford";
+            label1.Text = "Készítette: Nagy Gábor, Bodri Dávid és Szalkai-Szabó Ádám";
+            label4.Text = "Írta: Jonathan Ford";
 
             /*button1.Text = "Uj Jatek";
             button2.Text = "Kilepes";  
