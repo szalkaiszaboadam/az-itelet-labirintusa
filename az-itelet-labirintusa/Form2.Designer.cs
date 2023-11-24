@@ -195,7 +195,7 @@
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox4.Size = new System.Drawing.Size(338, 233);
             this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "00/00";
+            this.textBox4.Text = "Text";
             // 
             // textBox6
             // 
@@ -206,7 +206,7 @@
             this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox6.Size = new System.Drawing.Size(410, 113);
             this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "00/00";
+            this.textBox6.Text = "Text";
             // 
             // textBox7
             // 
@@ -217,7 +217,7 @@
             this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox7.Size = new System.Drawing.Size(410, 66);
             this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "00/00";
+            this.textBox7.Text = "Text";
             // 
             // textBox8
             // 
@@ -228,7 +228,7 @@
             this.textBox8.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox8.Size = new System.Drawing.Size(338, 69);
             this.textBox8.TabIndex = 5;
-            this.textBox8.Text = "00/00";
+            this.textBox8.Text = "Text";
             // 
             // groupBox7
             // 
@@ -250,7 +250,7 @@
             this.textBox9.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox9.Size = new System.Drawing.Size(410, 69);
             this.textBox9.TabIndex = 5;
-            this.textBox9.Text = "00/00";
+            this.textBox9.Text = "Text";
             // 
             // Form2
             // 

@@ -31,7 +31,7 @@ namespace az_itelet_labirintusa
 
             var pfc = new PrivateFontCollection();
             pfc.AddFontFile("MedievalSharp-Regular.ttf");  //Bitmgothic.ttf
-            label1.Font = new Font(pfc.Families[0], 67, FontStyle.Bold);
+            label1.Font = new Font(pfc.Families[0], 67, FontStyle.Bold);         
             label1.Text = " Az Ítélet Labirintusa";
             //label3.ForeColor = Color.FromArgb(255, 255, 255);
             label1.ForeColor = Color.FromArgb(0, 0, 00);
