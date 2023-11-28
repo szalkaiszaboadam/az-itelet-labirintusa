@@ -126,19 +126,19 @@ namespace az_itelet_labirintusa
 
             else if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
             {
-                
+                //ugyesseg
                 new Form2().ShowDialog();
             }
 
             else if (!checkBox1.Checked || checkBox2.Checked || !checkBox3.Checked)
             {
-
+                //eletero
                 new Form2().ShowDialog();
             }
 
             else if (!checkBox1.Checked || !checkBox2.Checked || checkBox3.Checked)
             {
-
+                //szerencse
                 new Form2().ShowDialog();
             }
         }
