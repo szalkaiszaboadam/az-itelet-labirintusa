@@ -100,10 +100,10 @@ namespace az_itelet_labirintusa
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (!checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            if ((!checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked))
             {
-                const string szoveg = "Nem választottál a megadott lehetőségek közül, kérjük próbáld újra!"; 
-                const string fejlec = "Hibás érték";
+                const string szoveg = "Nem választottál a megadott lehetőségek közül, kérjük próbáld újra!";
+                const string fejlec = "";//"Hibás érték";
                 /*var msgBox = */MessageBox.Show(szoveg, fejlec,
                                              MessageBoxButtons.OK,
                                              MessageBoxIcon.Error);
@@ -114,19 +114,31 @@ namespace az_itelet_labirintusa
                     new Form3().ShowDialog();
                 }*/
             }
-            else if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+
+            else if ((checkBox1.Checked && checkBox2.Checked && checkBox3.Checked) || (checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked) || (checkBox1.Checked && !checkBox2.Checked && checkBox3.Checked) || (!checkBox1.Checked && checkBox2.Checked && checkBox3.Checked))
             {
-                if (checkBox1.Checked)
-                {
+                const string szoveg = "Csak egyet választhasz a megadott lehetőségek közül, kérjük próbáld újra!";
+                const string fejlec = "";//"Figyelmeztetés";
+                MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+            }
 
-                } else if (checkBox2.Checked)
-                {
-
-                } else if (checkBox3.Checked)
-                {
-
-                }
+            else if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            {
                 
+                new Form2().ShowDialog();
+            }
+
+            else if (!checkBox1.Checked || checkBox2.Checked || !checkBox3.Checked)
+            {
+
+                new Form2().ShowDialog();
+            }
+
+            else if (!checkBox1.Checked || !checkBox2.Checked || checkBox3.Checked)
+            {
+
                 new Form2().ShowDialog();
             }
         }
