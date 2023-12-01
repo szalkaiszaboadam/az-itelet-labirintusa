@@ -22,3 +22,4 @@ C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.CoreCompileInputs.cache
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
+C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources

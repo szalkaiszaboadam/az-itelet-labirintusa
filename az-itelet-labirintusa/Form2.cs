@@ -29,6 +29,7 @@ namespace az_itelet_labirintusa
             this.MaximizeBox = false;
             this.MinimizeBox = false;
 
+
             var pfc = new PrivateFontCollection();
             pfc.AddFontFile("MedievalSharp-Regular.ttf");  //Bitmgothic.ttf
             label1.Font = new Font(pfc.Families[0], 67, FontStyle.Bold);         
@@ -49,14 +50,22 @@ namespace az_itelet_labirintusa
             groupBox7.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox8.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
 
-            textBox2.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox3.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox5.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox4.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox7.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox8.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox9.Font = new Font("Courier New", 14, FontStyle.Regular);
-            textBox6.Font = new Font("Courier New", 14, FontStyle.Regular);
+            textBox2.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox3.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox5.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox4.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox7.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox8.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox9.Font = new Font("Courier New", 13, FontStyle.Regular);
+            textBox6.Font = new Font("Courier New", 13, FontStyle.Regular);
+
+            /*MessageBox.Font = new Font("Courier New", 13, FontStyle.Regular);
+            MessageBoxButtons.*/
+
+            
+          
+
+
 
         }
 

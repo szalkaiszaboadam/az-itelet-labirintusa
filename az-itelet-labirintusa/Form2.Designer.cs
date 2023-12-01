@@ -38,13 +38,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -75,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 68);
+            this.label1.Location = new System.Drawing.Point(47, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
@@ -153,39 +153,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Felszerlési tárgyak";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.textBox7);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox5.Location = new System.Drawing.Point(1426, 292);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(422, 106);
-            this.groupBox5.TabIndex = 11;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Arany";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.textBox8);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox6.Location = new System.Drawing.Point(1041, 578);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(350, 109);
-            this.groupBox6.TabIndex = 12;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Ékkövek";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.textBox6);
-            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox8.Location = new System.Drawing.Point(1426, 533);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(422, 154);
-            this.groupBox8.TabIndex = 12;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Élelmiszerkészlet";
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(6, 34);
@@ -197,16 +164,16 @@
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Text";
             // 
-            // textBox6
+            // groupBox5
             // 
-            this.textBox6.Location = new System.Drawing.Point(6, 34);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox6.Size = new System.Drawing.Size(410, 113);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "Text";
+            this.groupBox5.Controls.Add(this.textBox7);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox5.Location = new System.Drawing.Point(1426, 292);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(422, 106);
+            this.groupBox5.TabIndex = 11;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Arany";
             // 
             // textBox7
             // 
@@ -219,6 +186,17 @@
             this.textBox7.TabIndex = 5;
             this.textBox7.Text = "Text";
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.textBox8);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox6.Location = new System.Drawing.Point(1041, 578);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(350, 109);
+            this.groupBox6.TabIndex = 12;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Ékkövek";
+            // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(6, 33);
@@ -229,6 +207,28 @@
             this.textBox8.Size = new System.Drawing.Size(338, 69);
             this.textBox8.TabIndex = 5;
             this.textBox8.Text = "Text";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.textBox6);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox8.Location = new System.Drawing.Point(1426, 533);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(422, 154);
+            this.groupBox8.TabIndex = 12;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Élelmiszerkészlet";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(6, 34);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox6.Size = new System.Drawing.Size(410, 113);
+            this.textBox6.TabIndex = 4;
+            this.textBox6.Text = "Text";
             // 
             // groupBox7
             // 

@@ -30,7 +30,7 @@ namespace az_itelet_labirintusa
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Text = "Az Ítélet Labirintusa";
-            ClientSize = new Size(450, 300);
+            ClientSize = new Size(450, 320);
             Width = 450;
             Height = 320;
             //this.BackColor = Color.FromArgb(0, 0, 0);
@@ -82,7 +82,9 @@ namespace az_itelet_labirintusa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().ShowDialog();
+            //new Form2().ShowDialog();
+            new Form3().ShowDialog();
+
             /*ClientSize = new Size(1920, 1080);
             Width = 1920;
             Height = 1080;*/
