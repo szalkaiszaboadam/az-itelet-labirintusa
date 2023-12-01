@@ -12,7 +12,6 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace az_itelet_labirintusa
@@ -70,18 +69,10 @@ namespace az_itelet_labirintusa
             /*MessageBox.Font = new Font("Courier New", 13, FontStyle.Regular);
             MessageBoxButtons.*/
 
-            StreamReader sr = new StreamReader("teszt.txt", Encoding.UTF8);
-            string sor = "";
-            while (!sr.EndOfStream) 
-            { 
-                sor = sr.ReadLine();
-                Class1 h = new Class1(sor);
-                jatekFajl.Add(h);
-            }
-            sr.Close();
+
+
         }
 
 
-        //https://stackoverflow.com/questions/70963656/how-to-make-a-form-click-a-button-when-loaded
     }
 }
