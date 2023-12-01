@@ -1,32 +1,29 @@
-﻿using az_itelet_labirintusa.Resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+=======
+>>>>>>> parent of d8f521b (system io)
 
 namespace az_itelet_labirintusa
 {
-
     public partial class Form2 : Form
     {
-        static List<Class1> jatekFajl = new List<Class1>();
-
         public Form2()
         {
             InitializeComponent();
         }
-
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -70,6 +67,7 @@ namespace az_itelet_labirintusa
             /*MessageBox.Font = new Font("Courier New", 13, FontStyle.Regular);
             MessageBoxButtons.*/
 
+<<<<<<< HEAD
             StreamReader sr = new StreamReader("teszt.txt", Encoding.UTF8);
             string sor = "";
             while (!sr.EndOfStream) 
@@ -79,6 +77,13 @@ namespace az_itelet_labirintusa
                 jatekFajl.Add(h);
             }
             sr.Close();
+=======
+            
+          
+
+
+
+>>>>>>> parent of d8f521b (system io)
         }
 
 
