@@ -19,6 +19,14 @@ namespace az_itelet_labirintusa
 
     public partial class Form2 : Form
     {
+
+        static Random Rnd = new Random(); 
+        public static int dobokocka()
+        {
+            return Rnd.Next(1, 7);
+        }
+
+
         static List<Class1> jatekFajl = new List<Class1>();
 
 
@@ -37,7 +45,7 @@ namespace az_itelet_labirintusa
 
         int eredetiEletero;
         int eredetiUgyesseg;
-        int eredetSzerencse;
+        int eredetiSzerencse;
 
         int jelenlegiEletero;
         int jelenlegiUgyesseg;
@@ -133,6 +141,25 @@ namespace az_itelet_labirintusa
 
             textBox4.Text = String.Join(Environment.NewLine, felszereles);
             textBox7.Text = arany.ToString();
+
+            //ÜGYESSÉG, ÉLETERŐ ÉS SZERENCSE
+
+
+            int tempEletero = dobokocka() + 12;
+            int tempUgyesseg = dobokocka() + 6;
+            int tempSzerencse = dobokocka() + 6;
+
+            eredetiEletero = tempEletero;
+            eredetiUgyesseg = tempUgyesseg;
+            eredetiSzerencse = tempSzerencse;
+
+            jelenlegiEletero = tempEletero;
+            jelenlegiUgyesseg = tempUgyesseg;
+            jelenlegiSzerencse = tempSzerencse;
+
+            textBox5.Text = eredetiEletero  + " " + jelenlegiEletero;
+            textBox2.Text = eredetiUgyesseg + " " + jelenlegiUgyesseg;
+            textBox3.Text = eredetiSzerencse + " " + jelenlegiSzerencse;
         }
 
 
