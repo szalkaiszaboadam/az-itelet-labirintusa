@@ -162,7 +162,7 @@
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox4.Size = new System.Drawing.Size(338, 233);
             this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Text";
+            this.textBox4.Text = "Üres";
             // 
             // groupBox5
             // 
@@ -184,7 +184,7 @@
             this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox7.Size = new System.Drawing.Size(410, 66);
             this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "Text";
+            this.textBox7.Text = "Üres";
             // 
             // groupBox6
             // 
@@ -206,7 +206,7 @@
             this.textBox8.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox8.Size = new System.Drawing.Size(338, 69);
             this.textBox8.TabIndex = 5;
-            this.textBox8.Text = "Text";
+            this.textBox8.Text = "Üres";
             // 
             // groupBox8
             // 
@@ -228,7 +228,7 @@
             this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox6.Size = new System.Drawing.Size(410, 113);
             this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "Text";
+            this.textBox6.Text = "Üres";
             // 
             // groupBox7
             // 
@@ -250,7 +250,7 @@
             this.textBox9.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox9.Size = new System.Drawing.Size(410, 69);
             this.textBox9.TabIndex = 5;
-            this.textBox9.Text = "Text";
+            this.textBox9.Text = "Üres";
             // 
             // Form2
             // 

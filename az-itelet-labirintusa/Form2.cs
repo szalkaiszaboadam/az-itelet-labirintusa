@@ -127,7 +127,6 @@ namespace az_itelet_labirintusa
             sr.Close();
 
 
-            textBox1.Text = jatekFajl[1].Szoveg;
 
 
             arany = 20;
@@ -139,11 +138,7 @@ namespace az_itelet_labirintusa
             felszereles.Add("Bőrvért");
 
 
-            textBox4.Text = String.Join(Environment.NewLine, felszereles);
-            textBox7.Text = arany.ToString();
-
             //ÜGYESSÉG, ÉLETERŐ ÉS SZERENCSE
-
 
             int tempEletero = dobokocka() + 12;
             int tempUgyesseg = dobokocka() + 6;
@@ -157,9 +152,25 @@ namespace az_itelet_labirintusa
             jelenlegiUgyesseg = tempUgyesseg;
             jelenlegiSzerencse = tempSzerencse;
 
+
+            if (valasztottItal == "Szerencse")
+            {
+                eredetiSzerencse += 1;
+                jelenlegiSzerencse += 1;
+            }
+
+
+            textBox1.Text = jatekFajl[1].Szoveg;
+
+            textBox4.Text = String.Join(Environment.NewLine, felszereles);
+            textBox7.Text = arany.ToString();
+
             textBox5.Text = eredetiEletero  + " " + jelenlegiEletero;
             textBox2.Text = eredetiUgyesseg + " " + jelenlegiUgyesseg;
             textBox3.Text = eredetiSzerencse + " " + jelenlegiSzerencse;
+
+            textBox9.Text = "2/" + italDarab + " " + valasztottItal;
+
         }
 
 

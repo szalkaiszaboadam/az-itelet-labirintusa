@@ -128,24 +128,24 @@ namespace az_itelet_labirintusa
                             MessageBoxIcon.Warning);
             }
 
-            else if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            else if (checkBox1.Checked)
             {
                 //ugyesseg
-                valasztott = "ugyesseg";
+                valasztott = "Ügyesség";
                 new Form2().ShowDialog();
             }
 
-            else if (!checkBox1.Checked || checkBox2.Checked || !checkBox3.Checked)
+            else if (checkBox2.Checked)
             {
                 //eletero
-                valasztott = "eletero";
+                valasztott = "Életerő";
                 new Form2().ShowDialog();
             }
 
-            else if (!checkBox1.Checked || !checkBox2.Checked || checkBox3.Checked)
+            else if (checkBox3.Checked)
             {
                 //szerencse
-                valasztott = "szerencse";
+                valasztott = "Szerencse";
                 new Form2().ShowDialog();
             }
         }
