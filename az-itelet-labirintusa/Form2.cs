@@ -1,4 +1,4 @@
-﻿using az_itelet_labirintusa.Resources;
+﻿/*using az_itelet_labirintusa.Resources;*/
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +68,33 @@ namespace az_itelet_labirintusa
 
             /*MessageBox.Font = new Font("Courier New", 13, FontStyle.Regular);
             MessageBoxButtons.*/
+
+            //https://stackoverflow.com/questions/70963656/how-to-make-a-form-click-a-button-when-loaded
+
+
+
+            StreamReader sr = new StreamReader("teszt.txt", Encoding.UTF8);
+            //sr.ReadLine();
+            string sor = "";
+            while (!sr.EndOfStream)
+            {
+                sor = sr.ReadLine();
+                Class1 h = new Class1(sor);
+                jatekFajl.Add(h);
+            }
+
+            /*while (!sr.EndOfStream)
+            {
+                sor = sr.ReadLine();
+                Class1 h = new Class1(sor);
+                jatekFajl.Add(h);
+            }*/
+            sr.Close();
+
+
+            textBox1.Text = jatekFajl[1].Szoveg;
+
+            
 
 
 
