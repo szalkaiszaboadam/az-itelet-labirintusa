@@ -47,6 +47,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.lapozEgy = new System.Windows.Forms.Button();
+            this.lapozKetto = new System.Windows.Forms.Button();
+            this.lapozHarom = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -252,12 +255,46 @@
             this.textBox9.TabIndex = 5;
             this.textBox9.Text = "Üres";
             // 
+            // lapozEgy
+            // 
+            this.lapozEgy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozEgy.Location = new System.Drawing.Point(1041, 728);
+            this.lapozEgy.Name = "lapozEgy";
+            this.lapozEgy.Size = new System.Drawing.Size(211, 49);
+            this.lapozEgy.TabIndex = 14;
+            this.lapozEgy.Text = "Lapozz a(z) 000. oldalra";
+            this.lapozEgy.UseVisualStyleBackColor = true;
+            this.lapozEgy.Click += new System.EventHandler(this.lapozEgy_Click);
+            // 
+            // lapozKetto
+            // 
+            this.lapozKetto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozKetto.Location = new System.Drawing.Point(1041, 802);
+            this.lapozKetto.Name = "lapozKetto";
+            this.lapozKetto.Size = new System.Drawing.Size(211, 49);
+            this.lapozKetto.TabIndex = 15;
+            this.lapozKetto.Text = "Lapozz a(z) 000. oldalra";
+            this.lapozKetto.UseVisualStyleBackColor = true;
+            // 
+            // lapozHarom
+            // 
+            this.lapozHarom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozHarom.Location = new System.Drawing.Point(1041, 876);
+            this.lapozHarom.Name = "lapozHarom";
+            this.lapozHarom.Size = new System.Drawing.Size(211, 49);
+            this.lapozHarom.TabIndex = 16;
+            this.lapozHarom.Text = "Lapozz a(z) 000. oldalra";
+            this.lapozHarom.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1924, 1011);
+            this.Controls.Add(this.lapozHarom);
+            this.Controls.Add(this.lapozKetto);
+            this.Controls.Add(this.lapozEgy);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox6);
@@ -313,5 +350,8 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button lapozEgy;
+        private System.Windows.Forms.Button lapozKetto;
+        private System.Windows.Forms.Button lapozHarom;
     }
 }

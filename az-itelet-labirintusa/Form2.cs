@@ -126,8 +126,10 @@ namespace az_itelet_labirintusa
             }*/
             sr.Close();
 
+            lapozKetto.Visible = false;
+            lapozHarom.Visible = false;
 
-
+            jelenlegiFejezet = 1;
 
             arany = 20;
 
@@ -153,26 +155,43 @@ namespace az_itelet_labirintusa
             jelenlegiSzerencse = tempSzerencse;
 
 
-            if (valasztottItal == "Szerencse")
-            {
-                eredetiSzerencse += 1;
-                jelenlegiSzerencse += 1;
-            }
-
 
             textBox1.Text = jatekFajl[1].Szoveg;
 
             textBox4.Text = String.Join(Environment.NewLine, felszereles);
             textBox7.Text = arany.ToString();
 
-            textBox5.Text = eredetiEletero  + " " + jelenlegiEletero;
-            textBox2.Text = eredetiUgyesseg + " " + jelenlegiUgyesseg;
-            textBox3.Text = eredetiSzerencse + " " + jelenlegiSzerencse;
+            textBox5.Text = eredetiEletero  + "/" + jelenlegiEletero;
+            textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+            textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
 
             textBox9.Text = "2/" + italDarab + " " + valasztottItal;
 
+            lapozEgy.Visible = true;
+            lapozEgy.Text = "Lapozz a(z) " + jatekFajl[1].ElsoLepes + ". lapodra";
+            jelenlegiFejezet = jatekFajl[1].ElsoLepes;
+
         }
 
+        private void lapozEgy_Click(object sender, EventArgs e)
+        {
+            if (jatekFajl[jelenlegiFejezet].JatekVege == true)
+            {
+                const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                const string fejlec = "";
+                DialogResult result = MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
 
+
+
+
+
+        }
     }
 }
