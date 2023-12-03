@@ -91,7 +91,7 @@
             this.groupBox1.Size = new System.Drawing.Size(233, 77);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kezdeti ügyesség";
+            this.groupBox1.Text = "Ügyesség";
             // 
             // textBox2
             // 
@@ -111,7 +111,7 @@
             this.groupBox4.Size = new System.Drawing.Size(233, 77);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Kezdeti életerő";
+            this.groupBox4.Text = "Életerő";
             // 
             // textBox5
             // 
@@ -131,7 +131,7 @@
             this.groupBox2.Size = new System.Drawing.Size(233, 77);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kezdeti szerencse";
+            this.groupBox2.Text = "Szerencse";
             // 
             // textBox3
             // 

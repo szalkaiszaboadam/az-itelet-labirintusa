@@ -21,6 +21,29 @@ namespace az_itelet_labirintusa
     {
         static List<Class1> jatekFajl = new List<Class1>();
 
+
+        List<string> felszereles = new List<string>();
+        List<string> elelem = new List<string>();
+        List<string> ekkovek = new List<string>();
+
+
+        int arany;
+
+
+        int italDarab;
+        string valasztottItal;
+
+        int jelenlegiFejezet;
+
+        int eredetiEletero;
+        int eredetiUgyesseg;
+        int eredetSzerencse;
+
+        int jelenlegiEletero;
+        int jelenlegiUgyesseg;
+        int jelenlegiSzerencse;
+
+
         public Form2()
         {
             InitializeComponent();
@@ -29,6 +52,10 @@ namespace az_itelet_labirintusa
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            Form2 jatekos = new Form2();
+
+
+
             this.BackColor = Color.FromArgb(255, 255, 255);
             this.Text = "Az Ítélet Labirintusa - Új Játék";
             WindowState = FormWindowState.Maximized;
@@ -60,7 +87,7 @@ namespace az_itelet_labirintusa
             textBox2.Font = new Font("Courier New", 13, FontStyle.Regular);
             textBox3.Font = new Font("Courier New", 13, FontStyle.Regular);
             textBox5.Font = new Font("Courier New", 13, FontStyle.Regular);
-            textBox4.Font = new Font("Courier New", 13, FontStyle.Regular);
+            /*felszereles*/textBox4.Font = new Font("Courier New", 13, FontStyle.Regular);
             textBox7.Font = new Font("Courier New", 13, FontStyle.Regular);
             textBox8.Font = new Font("Courier New", 13, FontStyle.Regular);
             textBox9.Font = new Font("Courier New", 13, FontStyle.Regular);
@@ -94,10 +121,18 @@ namespace az_itelet_labirintusa
 
             textBox1.Text = jatekFajl[1].Szoveg;
 
-            
+
+            arany = 20;
+
+            valasztottItal = Form3.valasztott;
+            italDarab = 2;
+
+            felszereles.Add("Kard");
+            felszereles.Add("Bőrvért");
 
 
-
+            textBox4.Text = String.Join(Environment.NewLine, felszereles);
+            textBox7.Text = arany.ToString();
         }
 
 

@@ -10,12 +10,16 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace az_itelet_labirintusa
 {
     public partial class Form3 : Form
     {
+
+        public static string valasztott = "";
+
         public Form3()
         {
             InitializeComponent();
@@ -127,18 +131,21 @@ namespace az_itelet_labirintusa
             else if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
             {
                 //ugyesseg
+                valasztott = "ugyesseg";
                 new Form2().ShowDialog();
             }
 
             else if (!checkBox1.Checked || checkBox2.Checked || !checkBox3.Checked)
             {
                 //eletero
+                valasztott = "eletero";
                 new Form2().ShowDialog();
             }
 
             else if (!checkBox1.Checked || !checkBox2.Checked || checkBox3.Checked)
             {
                 //szerencse
+                valasztott = "szerencse";
                 new Form2().ShowDialog();
             }
         }
