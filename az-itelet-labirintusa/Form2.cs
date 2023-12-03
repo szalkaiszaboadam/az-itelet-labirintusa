@@ -189,7 +189,22 @@ namespace az_itelet_labirintusa
             }
 
 
+            lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
+            
 
+            if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
+            {
+                lapozKetto.Visible = true;
+                lapozKetto.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
+            }
+
+            if (jatekFajl[jelenlegiFejezet].HarmadikLepes != 0)
+            {
+                lapozHarom.Visible = true;
+                lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
+            }
+
+            jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
 
 
         }
