@@ -1,24 +1,31 @@
-﻿using System;
+﻿using az_itelet_labirintusa.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace az_itelet_labirintusa
 {
+
     public partial class Form2 : Form
     {
+        static List<Class1> jatekFajl = new List<Class1>();
+
         public Form2()
         {
             InitializeComponent();
         }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -61,9 +68,6 @@ namespace az_itelet_labirintusa
 
             /*MessageBox.Font = new Font("Courier New", 13, FontStyle.Regular);
             MessageBoxButtons.*/
-
-            
-          
 
 
 
