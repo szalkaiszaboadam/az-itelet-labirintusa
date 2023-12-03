@@ -1,6 +1,7 @@
 (string)szoveg,
 (bool)vege
 (bool)szerencse,
+(bool)kulcs,
 (string)szorny1nev,
 (int) szorny1ugyesseg,
 (int)szorny1eleterö
