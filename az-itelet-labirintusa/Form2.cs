@@ -160,6 +160,8 @@ namespace az_itelet_labirintusa
 
             textBox1.Text = jatekFajl[1].Szoveg;
 
+            textBox8.Text = String.Join(Environment.NewLine, ekkovek);
+            textBox6.Text = String.Join(Environment.NewLine, elelem);
             textBox4.Text = String.Join(Environment.NewLine, felszereles);
             textBox7.Text = arany.ToString();
 
@@ -192,8 +194,8 @@ namespace az_itelet_labirintusa
             }
 
 
-           
-            
+            label2.Text = jelenlegiFejezet.ToString();
+
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
             {
@@ -215,16 +217,20 @@ namespace az_itelet_labirintusa
             }
 
        
-           
-            label2.Text = jelenlegiFejezet.ToString();
-
 
 
             textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
 
+            textBox8.Text = String.Join(Environment.NewLine, ekkovek);
+            textBox6.Text = String.Join(Environment.NewLine, elelem);
+            textBox4.Text = String.Join(Environment.NewLine, felszereles);
+            textBox7.Text = arany.ToString();
 
+            textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+            textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
 
-
+            textBox9.Text = "2/" + italDarab + " " + valasztottItal;
 
 
 
