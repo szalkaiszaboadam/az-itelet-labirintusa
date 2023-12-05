@@ -50,6 +50,7 @@
             this.lapozEgy = new System.Windows.Forms.Button();
             this.lapozKetto = new System.Windows.Forms.Button();
             this.lapozHarom = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -286,12 +287,23 @@
             this.lapozHarom.Text = "Lapozz a(z) 000. oldalra";
             this.lapozHarom.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 208);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1924, 1011);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lapozHarom);
             this.Controls.Add(this.lapozKetto);
             this.Controls.Add(this.lapozEgy);
@@ -353,5 +365,6 @@
         private System.Windows.Forms.Button lapozEgy;
         private System.Windows.Forms.Button lapozKetto;
         private System.Windows.Forms.Button lapozHarom;
+        private System.Windows.Forms.Label label2;
     }
 }

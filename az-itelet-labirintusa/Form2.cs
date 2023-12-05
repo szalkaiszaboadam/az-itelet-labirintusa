@@ -26,6 +26,8 @@ namespace az_itelet_labirintusa
             return Rnd.Next(1, 7);
         }
 
+        
+
 
         static List<Class1> jatekFajl = new List<Class1>();
 
@@ -171,6 +173,7 @@ namespace az_itelet_labirintusa
             lapozEgy.Text = "Lapozz a(z) " + jatekFajl[1].ElsoLepes + ". lapodra";
             jelenlegiFejezet = jatekFajl[1].ElsoLepes;
 
+            label2.Text = jelenlegiFejezet.ToString();
         }
 
         private void lapozEgy_Click(object sender, EventArgs e)
@@ -189,7 +192,7 @@ namespace az_itelet_labirintusa
             }
 
 
-            lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
+           
             
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
@@ -204,9 +207,30 @@ namespace az_itelet_labirintusa
                 lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
             }
 
+
+            if (jatekFajl[jelenlegiFejezet].ElsoLepes != 0)
+            {
+                lapozEgy.Visible = true;
+                lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
+            }
+
+       
+           
+            label2.Text = jelenlegiFejezet.ToString();
+
+
+
+            textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
+
+
+
+
+
+
+
+
+
             jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
-
-
         }
     }
 }
