@@ -799,8 +799,7 @@ Ha idáig eljutottál igen båtor lehetsz. Bátorságod most vagy életet hoz r�
 Bekopogsz az ajtón, és elfordítod a kilincset. Lapozz a 39-re.
 
 #196
-Amennyire csak tudod, puha ruhadarabokkal béleled ki a vállad, behúzod a nyakad és az ajtónak rontasz. Dobj egy kockával. Ha az eredmény 1-4. megsérültél és vesztesz 2 ÉLETERŐ pontot. Ha azonban 5-öt vagy 6-ot dobtál, sikerült betörnöd az ajtót – lapozz a 158-ra. Egészen addig kell próbálkoznod. míg ez nem sikerül.
-
+Amennyire csak tudod, puha ruhadarabokkal béleled ki a vállad, behúzod a nyakad és az ajtónak rontasz. Sikerült betörnöd az ajtót. Lapozz a 158-ra.
 #197
 A folyadékot elfogyasztva nem érzel semmi különlegeset. Tudtodon kívül azonban elfogyasztottad a Szerencse Elixírjét. Mostantól kezdve valahányszor próbára teszed a SZERENCSÉDET, a dobás értékét megnövelheted 1-el. Hogyha még nem tetted, és most belekóstolnál az első üvegbe, lapozz a 139-re. Ha a másodikat akarod meginni, lapozz a 150-re. Ha folytatnád az utadat keleti irányba, lapozz a 29-re.
 

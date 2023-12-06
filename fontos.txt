@@ -1,0 +1,2 @@
+Játék szövege/Játéknak vége?/Van ellenség?/Lapozz 1./Lapozz 2./ Lapozz 3./Életerő vesztés/Szerencse vesztés/
+                             ^^^^^^^^^^^^^
