@@ -191,6 +191,49 @@ namespace az_itelet_labirintusa
             label2.Text = jelenlegiFejezet.ToString();
 
 
+            if (valasztottItal == "Ügyesség")
+            {
+                if (jelenlegiUgyesseg == eredetiUgyesseg)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiUgyesseg < eredetiUgyesseg)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+
+            if (valasztottItal == "Életerő")
+            {
+                if (jelenlegiEletero == eredetiEletero)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiEletero < eredetiEletero)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (valasztottItal == "Szerencse")
+            {
+                if (jelenlegiSzerencse == eredetiSzerencse)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiSzerencse < eredetiSzerencse)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
         }
 
         private void lapozEgy_Click(object sender, EventArgs e)
