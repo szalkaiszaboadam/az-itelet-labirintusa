@@ -51,6 +51,7 @@
             this.lapozKetto = new System.Windows.Forms.Button();
             this.lapozHarom = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -152,7 +153,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox3.Location = new System.Drawing.Point(1041, 292);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(350, 273);
+            this.groupBox3.Size = new System.Drawing.Size(350, 257);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Felszerlési tárgyak";
@@ -164,7 +165,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(338, 233);
+            this.textBox4.Size = new System.Drawing.Size(338, 217);
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Üres";
             // 
@@ -174,7 +175,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox5.Location = new System.Drawing.Point(1426, 292);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(422, 106);
+            this.groupBox5.Size = new System.Drawing.Size(422, 81);
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Arany";
@@ -186,7 +187,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox7.Size = new System.Drawing.Size(410, 66);
+            this.textBox7.Size = new System.Drawing.Size(410, 39);
             this.textBox7.TabIndex = 5;
             this.textBox7.Text = "Üres";
             // 
@@ -194,7 +195,7 @@
             // 
             this.groupBox6.Controls.Add(this.textBox8);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox6.Location = new System.Drawing.Point(1041, 578);
+            this.groupBox6.Location = new System.Drawing.Point(1041, 566);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(350, 109);
             this.groupBox6.TabIndex = 12;
@@ -203,7 +204,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(6, 33);
+            this.textBox8.Location = new System.Drawing.Point(6, 36);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
@@ -216,9 +217,9 @@
             // 
             this.groupBox8.Controls.Add(this.textBox6);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox8.Location = new System.Drawing.Point(1426, 533);
+            this.groupBox8.Location = new System.Drawing.Point(1426, 501);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(422, 154);
+            this.groupBox8.Size = new System.Drawing.Size(422, 109);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Élelmiszerkészlet";
@@ -230,7 +231,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox6.Size = new System.Drawing.Size(410, 113);
+            this.textBox6.Size = new System.Drawing.Size(410, 68);
             this.textBox6.TabIndex = 4;
             this.textBox6.Text = "Üres";
             // 
@@ -238,7 +239,7 @@
             // 
             this.groupBox7.Controls.Add(this.textBox9);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox7.Location = new System.Drawing.Point(1426, 411);
+            this.groupBox7.Location = new System.Drawing.Point(1426, 382);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(422, 109);
             this.groupBox7.TabIndex = 13;
@@ -259,7 +260,7 @@
             // lapozEgy
             // 
             this.lapozEgy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lapozEgy.Location = new System.Drawing.Point(1041, 728);
+            this.lapozEgy.Location = new System.Drawing.Point(1041, 719);
             this.lapozEgy.Name = "lapozEgy";
             this.lapozEgy.Size = new System.Drawing.Size(211, 49);
             this.lapozEgy.TabIndex = 14;
@@ -270,7 +271,7 @@
             // lapozKetto
             // 
             this.lapozKetto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lapozKetto.Location = new System.Drawing.Point(1041, 802);
+            this.lapozKetto.Location = new System.Drawing.Point(1041, 793);
             this.lapozKetto.Name = "lapozKetto";
             this.lapozKetto.Size = new System.Drawing.Size(211, 49);
             this.lapozKetto.TabIndex = 15;
@@ -280,7 +281,7 @@
             // lapozHarom
             // 
             this.lapozHarom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lapozHarom.Location = new System.Drawing.Point(1041, 876);
+            this.lapozHarom.Location = new System.Drawing.Point(1041, 867);
             this.lapozHarom.Name = "lapozHarom";
             this.lapozHarom.Size = new System.Drawing.Size(211, 49);
             this.lapozHarom.TabIndex = 16;
@@ -297,12 +298,23 @@
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(1425, 626);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(422, 49);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Élelem elfogyasztás";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1924, 1011);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lapozHarom);
             this.Controls.Add(this.lapozKetto);
@@ -366,5 +378,6 @@
         private System.Windows.Forms.Button lapozKetto;
         private System.Windows.Forms.Button lapozHarom;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
