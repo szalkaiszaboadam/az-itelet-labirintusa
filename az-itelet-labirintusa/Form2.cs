@@ -53,6 +53,20 @@ namespace az_itelet_labirintusa
         int jelenlegiUgyesseg;
         int jelenlegiSzerencse;
 
+        public void eletItal()  
+        {
+            jelenlegiEletero = eredetiEletero;
+        }
+
+        public void szerItal()
+        {
+            jelenlegiEletero = eredetiEletero;
+        }
+
+        public void ugyItal()
+        {
+            jelenlegiEletero = eredetiEletero;
+        }
 
         public Form2()
         {
