@@ -473,6 +473,30 @@ namespace az_itelet_labirintusa
                 textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
 
                 textBox9.Text = "2/" + italDarab + " " + valasztottItal;
+
+                if (valasztottItal == "Ügyesség")
+                {
+                    if (jelenlegiUgyesseg == eredetiUgyesseg)
+                    {
+                        textBox9.Enabled = false;
+                        button2.Enabled = false;
+                    }
+                } else if (valasztottItal == "Életerő")
+                {
+                    if (jelenlegiEletero == eredetiEletero)
+                    {
+                        textBox9.Enabled = false;
+                        button2.Enabled = false;
+                    }
+                } else if (valasztottItal == "Szerencse")
+                {
+                    if (jelenlegiSzerencse == eredetiSzerencse)
+                    {
+                        textBox9.Enabled = false;
+                        button2.Enabled = false;
+                    }
+                }
+
             }
         }
     }
