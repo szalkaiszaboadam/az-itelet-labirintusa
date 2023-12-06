@@ -55,20 +55,6 @@ namespace az_itelet_labirintusa
         int jelenlegiUgyesseg;
         int jelenlegiSzerencse;
 
-        public void eletItal()  
-        {
-            jelenlegiEletero = eredetiEletero;
-        }
-
-        public void szerItal()
-        {
-            jelenlegiEletero = eredetiEletero;
-        }
-
-        public void ugyItal()
-        {
-            jelenlegiEletero = eredetiEletero;
-        }
 
         public Form2()
         {
@@ -315,6 +301,55 @@ namespace az_itelet_labirintusa
             }
 
 
+            if (valasztottItal == "Ügyesség")
+            {
+                if (jelenlegiUgyesseg == eredetiUgyesseg)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiUgyesseg < eredetiUgyesseg)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+
+            if (valasztottItal == "Életerő")
+            {
+                if (jelenlegiEletero == eredetiEletero)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiEletero < eredetiEletero)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (valasztottItal == "Szerencse")
+            {
+                if (jelenlegiSzerencse == eredetiSzerencse)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiSzerencse < eredetiSzerencse)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (italDarab == 0)
+            {
+                textBox9.Enabled = false;
+                button2.Enabled = false;
+            }
+
             textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
 
             textBox6.Text = elelem.ToString() + " Élelem";
@@ -368,6 +403,34 @@ namespace az_itelet_labirintusa
             textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
             textBox6.Text = elelem.ToString() + " Élelem";
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (italDarab != 0)
+            {
+                if (valasztottItal == "Ügyesség")
+                {
+                    jelenlegiUgyesseg = eredetiUgyesseg;
+                    italDarab = italDarab - 1;
+                } else if (valasztottItal == "Életerő")
+                {
+                    jelenlegiEletero = eredetiEletero;
+                    italDarab = italDarab - 1;
+
+                } else if (valasztottItal == "Szerencse")
+                {
+                    eredetiSzerencse = eredetiSzerencse + 1;
+                    jelenlegiSzerencse = eredetiSzerencse;
+                    italDarab = italDarab - 1;
+                }
+
+                textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+                textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+                textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+
+                textBox9.Text = "2/" + italDarab + " " + valasztottItal;
+            }
         }
     }
 }
