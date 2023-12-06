@@ -33,7 +33,8 @@ namespace az_itelet_labirintusa
 
 
         List<string> felszereles = new List<string>();
-        List<string> elelem = new List<string>();
+        //List<string> elelem = new List<string>();
+        int elelem;
         List<string> ekkovek = new List<string>();
 
 
@@ -149,6 +150,8 @@ namespace az_itelet_labirintusa
 
             arany = 20;
 
+            elelem = 5;
+
             valasztottItal = Form3.valasztott;
             italDarab = 2;
 
@@ -175,9 +178,9 @@ namespace az_itelet_labirintusa
             textBox1.Text = jatekFajl[1].Szoveg;
 
             textBox8.Text = String.Join(Environment.NewLine, ekkovek);
-            textBox6.Text = String.Join(Environment.NewLine, elelem);
+            textBox6.Text = elelem.ToString() + " Élelem";
             textBox4.Text = String.Join(Environment.NewLine, felszereles);
-            textBox7.Text = arany.ToString();
+            textBox7.Text = arany.ToString() + " Arany";
 
             textBox5.Text = eredetiEletero  + "/" + jelenlegiEletero;
             textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
@@ -235,10 +238,9 @@ namespace az_itelet_labirintusa
 
             textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
 
-            textBox8.Text = String.Join(Environment.NewLine, ekkovek);
-            textBox6.Text = String.Join(Environment.NewLine, elelem);
+            textBox6.Text = elelem.ToString() + " Élelem";
             textBox4.Text = String.Join(Environment.NewLine, felszereles);
-            textBox7.Text = arany.ToString();
+            textBox7.Text = arany.ToString() + " Arany";
 
             textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
             textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
