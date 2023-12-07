@@ -1,12 +1,20 @@
 (string)szoveg,
 (bool)vege
-(bool)szerencse,
+(bool)probaszerencse,
 (bool)kulcs,
+(bool)dobokockadobas
 (string)szorny1nev,
-(int) szorny1ugyesseg,
+(int)szorny1ugyesseg,
 (int)szorny1eleterö
 (string)szorny2nev,
-(int) szorny2ugyesseg,
+(int)szorny2ugyesseg,
 (int)szorny2eleterö,
 (int)lapoz1,
-(int)lapoz2
+(int)lapoz2,
+(int)lapoz3,
+(int)eleterolevonas
+(int)szerencselevonas
+(bool)eleterodobas
+
+
+/false/false/false/false/null/0/0/null/0/0/0/0/0/0/0/false
