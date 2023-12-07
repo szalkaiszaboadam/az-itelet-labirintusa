@@ -23,3 +23,4 @@ C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources
