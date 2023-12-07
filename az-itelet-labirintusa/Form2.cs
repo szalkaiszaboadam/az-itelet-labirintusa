@@ -276,6 +276,9 @@ namespace az_itelet_labirintusa
                 }
             }
 
+
+
+
             if (jatekFajl[jelenlegiFejezet].EleteroVesztes != 0)
             {
                 jelenlegiEletero = jelenlegiEletero - jatekFajl[jelenlegiFejezet].EleteroVesztes;
@@ -408,8 +411,19 @@ namespace az_itelet_labirintusa
 
 
 
+            if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
+            {
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                lapozHarom.Visible = false;
 
-            jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
+                button3.Enabled = true;
+            } else if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == false)
+            {
+                jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
+            }
+
+            
         }
 
         private void lapozKetto_Click(object sender, EventArgs e)
@@ -497,6 +511,36 @@ namespace az_itelet_labirintusa
                     }
                 }
 
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            lapozEgy.Enabled = false;
+            lapozKetto.Enabled = false;
+            lapozHarom.Visible = false;
+
+            int ketDobas = dobokocka() + dobokocka();
+            if (ketDobas < jelenlegiSzerencse)
+            {
+                //lapozEgy.Text = jatekFajl[jelenlegiFejezet].ElsoLepes.ToString() + " " +jelenlegiFejezet;
+                lapozEgy.Enabled = true;
+                lapozKetto.Enabled = false;
+                lapozHarom.Visible = false;
+                jelenlegiSzerencse = jelenlegiSzerencse-1;
+                textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+                jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
+                button3.Enabled = false;
+            } else
+            {
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = true;
+                lapozHarom.Visible = false;
+                //lapozKetto.Text = jatekFajl[jelenlegiFejezet].MasodikLepes.ToString() + " " + jelenlegiFejezet;
+                jelenlegiSzerencse = jelenlegiSzerencse - 1;
+                jelenlegiFejezet = jatekFajl[jelenlegiFejezet].MasodikLepes;
+                textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+                button3.Enabled = false;
             }
         }
     }

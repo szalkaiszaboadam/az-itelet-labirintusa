@@ -86,10 +86,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox1.Location = new System.Drawing.Point(217, 123);
+            this.checkBox1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox1.Location = new System.Drawing.Point(147, 128);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(420, 24);
+            this.checkBox1.Size = new System.Drawing.Size(557, 22);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Az Ügyesség Itala – visszaállítja UGYESSÉG pontjaidat";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -98,11 +98,11 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(206, 318);
+            this.textBox2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox2.Location = new System.Drawing.Point(147, 306);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(438, 92);
+            this.textBox2.Size = new System.Drawing.Size(577, 126);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = resources.GetString("textBox2.Text");
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -110,10 +110,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox2.Location = new System.Drawing.Point(217, 175);
+            this.checkBox2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox2.Location = new System.Drawing.Point(147, 176);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(382, 24);
+            this.checkBox2.Size = new System.Drawing.Size(537, 22);
             this.checkBox2.TabIndex = 7;
             this.checkBox2.Text = "Az Életerő Itala – visszaállítja ÉLETERÖ pontjaidat";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox3.Location = new System.Drawing.Point(217, 230);
+            this.checkBox3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox3.Location = new System.Drawing.Point(147, 221);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(427, 24);
+            this.checkBox3.Size = new System.Drawing.Size(577, 22);
             this.checkBox3.TabIndex = 8;
             this.checkBox3.Text = "A Szerencse Itala – visszaállítja SZERENCSE pontjaidat,";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -132,16 +132,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(232, 255);
+            this.label3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(164, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(327, 20);
+            this.label3.Size = new System.Drawing.Size(398, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "és 1-el megnöveli Kezdeti SZERENCSÉDET.";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(367, 438);
+            this.button1.Location = new System.Drawing.Point(376, 438);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 30);
             this.button1.TabIndex = 10;
