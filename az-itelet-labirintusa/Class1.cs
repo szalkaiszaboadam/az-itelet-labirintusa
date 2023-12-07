@@ -17,6 +17,7 @@ namespace az_itelet_labirintusa/*.Resources*/
         private int harmadikLepes;
         private int eleteroVesztes;
         private int szerencseVesztes;
+        private bool probaSzerencse;
 
         public Class1(string sor)
         {
@@ -29,6 +30,7 @@ namespace az_itelet_labirintusa/*.Resources*/
             harmadikLepes = Convert.ToInt32(d[5]);
             eleteroVesztes = Convert.ToInt32(d[6]);
             szerencseVesztes = Convert.ToInt32(d[7]);
+            probaSzerencse = Convert.ToBoolean(d[8]);
         }
 
         public string Szoveg { get => szoveg; set => szoveg = value; }
@@ -39,5 +41,6 @@ namespace az_itelet_labirintusa/*.Resources*/
         public int HarmadikLepes { get => harmadikLepes; set => harmadikLepes = value; }
         public int EleteroVesztes { get => eleteroVesztes; set => eleteroVesztes = value; }
         public int SzerencseVesztes { get => szerencseVesztes; set => szerencseVesztes = value; }
+        public bool ProbaSzerencse { get => probaSzerencse; set => probaSzerencse = value; }
     }
 }
