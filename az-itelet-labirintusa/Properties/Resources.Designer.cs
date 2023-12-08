@@ -63,6 +63,26 @@ namespace az_itelet_labirintusa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1Laboratory_Gear___Alchemy_Machine {
+            get {
+                object obj = ResourceManager.GetObject("1Laboratory Gear - Alchemy Machine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2Laboratory_Gear___Alchemy_Machine {
+            get {
+                object obj = ResourceManager.GetObject("2Laboratory Gear - Alchemy Machine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background___Cellar {
             get {
                 object obj = ResourceManager.GetObject("Background - Cellar", resourceCulture);
@@ -113,9 +133,39 @@ namespace az_itelet_labirintusa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Laboratory_Gear___Alchemy_Machine {
+            get {
+                object obj = ResourceManager.GetObject("Laboratory Gear - Alchemy Machine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NPC___Mysterious_Visitor {
             get {
                 object obj = ResourceManager.GetObject("NPC - Mysterious Visitor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scroll_Shelf {
+            get {
+                object obj = ResourceManager.GetObject("Scroll Shelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tree {
+            get {
+                object obj = ResourceManager.GetObject("Tree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

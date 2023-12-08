@@ -117,5 +117,20 @@
   <ItemGroup>
     <None Include="Resources\NPC - Mysterious Visitor.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll Shelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laboratory Gear - Alchemy Machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Laboratory Gear - Alchemy Machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Laboratory Gear - Alchemy Machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tree.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

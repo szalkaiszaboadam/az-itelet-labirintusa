@@ -53,10 +53,10 @@ Bizonyos pontoknál lehetőséget kapsz rá, hogy elmenekülj a csatából, ha a
 CSATA EGYNÉL TÖBB TEREMTMÉNNYEL
 Ha egynél több lénnyel kerülnél egyszerre összeütközésbe, mindig közöljük veled a harcra vonatkozó utasítást az adott pont alatt. Néha egyszerre kell velük megküzdened, néha meg mindegyikkel különkülön.
 
-SZERENCSE
-Kalandjaid során, akár csatában, akár olyan helyzetekben, amikor a SZERENCSE dönthet sorsod alakulásában (az erre vonatkozó utasítást az adott fejezetpontok alatt megkapod), a SZERENCSÉDRE is számíthatsz, hogy az események kimenetele számodra kedvező legyen. De vigyázz! A SZERENCSÉRE számítani kockázatos, és ha balszerencsés vagy, az eredmény végzetes lehet.
-SZERENCSÉDET a következő módon teheted próbára. Dobj két kockával. Ha a kapott szám nem nagyobb, mint a jelenlegi SzERENCSE pontszámod, az eredmény kedvező. Ha magasabb számot dobsz, mint a jelenlegi SZERENCSE pontszámod, balszerencséd volt, és vállalnod kell a következményeit.
-Úgy hívjuk ezt, hogy Tedd próbára SZERENCSÉD. Minden alkalommal, amikor próbára teszed SZERENCSÉDET, 1 pontot le kell vonnod SZERENCSE pontszámodból. Így hamar rájössz, hogy a SZERENCSÉRE hagyatkozni kockázatos.
+|||SZERENCSE
+|Kalandjaid során, akár csatában, akár olyan helyzetekben, amikor a SZERENCSE dönthet sorsod alakulásában (az erre vonatkozó utasítást az adott fejezetpontok alatt megkapod), |||a SZERENCSÉDRE is számíthatsz, hogy az események kimenetele számodra kedvező legyen. De vigyázz! A SZERENCSÉRE számítani kockázatos, és ha balszerencsés vagy, az eredmény |||végzetes lehet.
+|||SZERENCSÉDET a következő módon teheted próbára. Dobj két kockával. Ha a kapott szám nem nagyobb, mint a jelenlegi SzERENCSE pontszámod, az eredmény kedvező. Ha magasabb |||számot dobsz, mint a jelenlegi SZERENCSE pontszámod, balszerencséd volt, és vállalnod kell a következményeit.
+|Úgy hívjuk ezt, hogy Tedd próbára SZERENCSÉD. Minden alkalommal, amikor próbára teszed SZERENCSÉDET, 1 pontot le kell vonnod SZERENCSE pontszámodból. Így hamar rájössz, hogy |||a SZERENCSÉRE hagyatkozni kockázatos.
 
 A SZERENCSE használata csatában
 ===============================

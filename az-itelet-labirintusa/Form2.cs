@@ -69,19 +69,20 @@ namespace az_itelet_labirintusa
 
 
             this.BackColor = Color.FromArgb(255, 255, 255);
-            this.Text = "Az Ítélet Labirintusa - Új Játék";
+            this.Text = "Az Ítélet Labirintusa - Kalandlap";
             WindowState = FormWindowState.Maximized;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-
+            label1.ForeColor = Color.FromArgb(60, 32, 22);
+            textBox1.ForeColor = Color.FromArgb(60, 32, 22);
 
             var pfc = new PrivateFontCollection();
             pfc.AddFontFile("MedievalSharp-Regular.ttf");  //Bitmgothic.ttf
             label1.Font = new Font(pfc.Families[0], 67, FontStyle.Bold);         
             label1.Text = " Az Ítélet Labirintusa";
             //label3.ForeColor = Color.FromArgb(255, 255, 255);
-            label1.ForeColor = Color.FromArgb(0, 0, 00);
+            
 
             textBox1.Font = new Font(pfc.Families[0], 37, FontStyle.Regular);
 
