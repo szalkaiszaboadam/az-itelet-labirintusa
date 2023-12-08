@@ -93,6 +93,7 @@ namespace az_itelet_labirintusa
             groupBox4.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox3.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox5.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
+            groupBox9.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox6.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox7.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
             groupBox8.Font = new Font(pfc.Families[0], 17, FontStyle.Bold);
@@ -131,8 +132,12 @@ namespace az_itelet_labirintusa
             }*/
             sr.Close();
 
-            lapozKetto.Visible = false;
-            lapozHarom.Visible = false;
+            lapozKetto.Enabled = false;
+            lapozHarom.Enabled = false;
+
+
+            groupBox9.Enabled = false;
+            button4.Enabled = false;
 
             jelenlegiFejezet = 1;
 
@@ -309,20 +314,20 @@ namespace az_itelet_labirintusa
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
             {
-                lapozKetto.Visible = true;
+                lapozKetto.Enabled = true;
                 lapozKetto.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
             }
 
             if (jatekFajl[jelenlegiFejezet].HarmadikLepes != 0)
             {
-                lapozHarom.Visible = true;
+                lapozHarom.Enabled = true;
                 lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
             }
 
 
             if (jatekFajl[jelenlegiFejezet].ElsoLepes != 0)
             {
-                lapozEgy.Visible = true;
+                lapozEgy.Enabled = true;
                 lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
             }
 
@@ -416,10 +421,45 @@ namespace az_itelet_labirintusa
             {
                 lapozEgy.Enabled = false;
                 lapozKetto.Enabled = false;
-                lapozHarom.Visible = false;
+                lapozHarom.Enabled = false;
 
                 button3.Enabled = true;
-            } else if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == false)
+
+            } else if (jatekFajl[jelenlegiFejezet].ElsoEllenseg != "Nincs")
+            {
+
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                button1.Enabled = false;
+                lapozHarom.Enabled = false;
+                button3.Visible = false;
+
+                
+                button4.Enabled = true;
+
+                if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "Nincs")
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = false;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                }
+                else
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = true;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                    textBox11.Text = jatekFajl[jelenlegiFejezet].MasodikEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].MasodikUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].MasodikElet;
+                }
+
+
+
+
+
+            } 
+            
+            else if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == false)
             {
                 jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
             }
@@ -519,7 +559,7 @@ namespace az_itelet_labirintusa
         {
             lapozEgy.Enabled = false;
             lapozKetto.Enabled = false;
-            lapozHarom.Visible = false;
+            lapozHarom.Enabled = false;
 
             int ketDobas = dobokocka() + dobokocka();
             if (ketDobas < jelenlegiSzerencse)
@@ -527,7 +567,7 @@ namespace az_itelet_labirintusa
                 //lapozEgy.Text = jatekFajl[jelenlegiFejezet].ElsoLepes.ToString() + " " +jelenlegiFejezet;
                 lapozEgy.Enabled = true;
                 lapozKetto.Enabled = false;
-                lapozHarom.Visible = false;
+                lapozHarom.Enabled = false;
                 jelenlegiSzerencse = jelenlegiSzerencse-1;
                 textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
                 jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
@@ -536,7 +576,7 @@ namespace az_itelet_labirintusa
             {
                 lapozEgy.Enabled = false;
                 lapozKetto.Enabled = true;
-                lapozHarom.Visible = false;
+                lapozHarom.Enabled = false;
                 //lapozKetto.Text = jatekFajl[jelenlegiFejezet].MasodikLepes.ToString() + " " + jelenlegiFejezet;
                 jelenlegiSzerencse = jelenlegiSzerencse - 1;
                 jelenlegiFejezet = jatekFajl[jelenlegiFejezet].MasodikLepes;

@@ -18,6 +18,13 @@ namespace az_itelet_labirintusa/*.Resources*/
         private int eleteroVesztes;
         private int szerencseVesztes;
         private bool probaSzerencse;
+        private string elsoEllenseg;
+        private int elsoElet;
+        private int elsoUgyesseg;
+        private string masodikEllenseg;
+        private int masodikElet;
+        private int masodikUgyesseg;
+        private string egyszerreKulon;
 
         public Class1(string sor)
         {
@@ -31,6 +38,13 @@ namespace az_itelet_labirintusa/*.Resources*/
             eleteroVesztes = Convert.ToInt32(d[6]);
             szerencseVesztes = Convert.ToInt32(d[7]);
             probaSzerencse = Convert.ToBoolean(d[8]);
+            elsoEllenseg = d[9];
+            elsoElet = Convert.ToInt32(d[10]);
+            elsoUgyesseg = Convert.ToInt32(d[11]);
+            masodikEllenseg = d[12];
+            masodikElet = Convert.ToInt32(d[13]);
+            masodikUgyesseg = Convert.ToInt32(d[14]);
+            egyszerreKulon = d[15];
         }
 
         public string Szoveg { get => szoveg; set => szoveg = value; }
@@ -42,5 +56,17 @@ namespace az_itelet_labirintusa/*.Resources*/
         public int EleteroVesztes { get => eleteroVesztes; set => eleteroVesztes = value; }
         public int SzerencseVesztes { get => szerencseVesztes; set => szerencseVesztes = value; }
         public bool ProbaSzerencse { get => probaSzerencse; set => probaSzerencse = value; }
+
+
+        public string ElsoEllenseg { get => elsoEllenseg; set => elsoEllenseg = value; }
+        public int ElsoElet { get => elsoElet; set => elsoElet = value; }
+        public int ElsoUgyesseg { get => elsoUgyesseg; set => elsoUgyesseg = value; }
+
+
+        public string MasodikEllenseg { get => masodikEllenseg; set => masodikEllenseg = value; }
+        public int MasodikElet { get => masodikElet; set => masodikElet = value; }
+        public int MasodikUgyesseg { get => masodikUgyesseg; set => masodikUgyesseg = value; }
+
+        public string EgyszerreKulon { get => egyszerreKulon; set => egyszerreKulon = value; }
     }
 }
