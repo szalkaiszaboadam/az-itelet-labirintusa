@@ -109,5 +109,15 @@ namespace az_itelet_labirintusa.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NPC___Mysterious_Visitor {
+            get {
+                object obj = ResourceManager.GetObject("NPC - Mysterious Visitor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

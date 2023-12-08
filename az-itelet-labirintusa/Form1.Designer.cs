@@ -105,8 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RosyBrown;
-            this.BackgroundImage = global::az_itelet_labirintusa.Properties.Resources.Background___Cellar;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 281);
             this.Controls.Add(this.label4);

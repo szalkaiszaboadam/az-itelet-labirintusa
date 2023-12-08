@@ -121,16 +121,19 @@
   <data name="Background - Cellar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background - Cellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Background - Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background - Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GUI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GUI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Képernyőkép 2023-07-01 205116" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Képernyőkép 2023-07-01 205116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background - Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background - Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Képernyőkép 2023-07-01 205116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Képernyőkép 2023-07-01 205116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NPC - Mysterious Visitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NPC - Mysterious Visitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

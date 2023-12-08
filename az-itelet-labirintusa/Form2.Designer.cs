@@ -66,7 +66,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Linen;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox1.Location = new System.Drawing.Point(63, 208);
@@ -344,7 +344,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::az_itelet_labirintusa.Properties.Resources.Background___Cellar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1011);
             this.Controls.Add(this.button3);
