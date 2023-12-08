@@ -34,23 +34,26 @@ namespace az_itelet_labirintusa
             Width = 450;
             Height = 320;
             //this.BackColor = Color.FromArgb(0, 0, 0);
-            this.BackColor = Color.FromArgb(255, 255, 255);
+            //this.BackColor = Color.FromArgb(255, 255, 255);
 
             var pfc = new PrivateFontCollection();
             pfc.AddFontFile("MedievalSharp-Regular.ttf");  //Bitmgothic.ttf
             label3.Font = new Font(pfc.Families[0], 34, FontStyle.Bold);
             label3.Text = "  Az Ítélet\nLabirintusa";
             //label3.ForeColor = Color.FromArgb(255, 255, 255);
-            label3.ForeColor = Color.FromArgb(0, 0, 00);
+            label3.ForeColor = Color.FromArgb(60, 32, 22);
+            label4.ForeColor = Color.FromArgb(60, 32, 22);
+            label1.ForeColor = Color.FromArgb(60, 32, 22);
+            //label3.ForeColor = Color.FromArgb(118, 77, 56);
 
-            var pfc2 = new PrivateFontCollection();
-            pfc2.AddFontFile("Pixel Millennium.ttf");
-              
-         
+            //label3.BackColor = System.Drawing.Color.Transparent;
+
+
+
             button1.Font = new Font("Courier New", 8, FontStyle.Regular);
             button2.Font = new Font("Courier New", 8, FontStyle.Regular);
             label1.Font = new Font("Courier New", 8, FontStyle.Regular);
-            label2.Font = new Font("Courier New", 8, FontStyle.Regular);
+            //label2.Font = new Font("Courier New", 8, FontStyle.Regular);
             label4.Font = new Font("Courier New", 8, FontStyle.Regular);
 
             /*button1.Font = new Font(pfc2.Families[0], 11, FontStyle.Regular);

@@ -63,6 +63,26 @@ namespace az_itelet_labirintusa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background___Cellar {
+            get {
+                object obj = ResourceManager.GetObject("Background - Cellar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background___Paper {
+            get {
+                object obj = ResourceManager.GetObject("Background - Paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GUI {
             get {
                 object obj = ResourceManager.GetObject("GUI", resourceCulture);
@@ -73,9 +93,29 @@ namespace az_itelet_labirintusa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image2 {
+            get {
+                object obj = ResourceManager.GetObject("image2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Képernyőkép_2023_07_01_205116 {
             get {
                 object obj = ResourceManager.GetObject("Képernyőkép 2023-07-01 205116", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NPC___Mysterious_Visitor {
+            get {
+                object obj = ResourceManager.GetObject("NPC - Mysterious Visitor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
