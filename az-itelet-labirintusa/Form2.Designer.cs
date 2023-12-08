@@ -47,12 +47,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.lapozEgy = new System.Windows.Forms.Button();
             this.lapozKetto = new System.Windows.Forms.Button();
             this.lapozHarom = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -65,23 +66,25 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(63, 208);
+            this.textBox1.Location = new System.Drawing.Point(63, 202);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(906, 744);
+            this.textBox1.Size = new System.Drawing.Size(906, 700);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "teszt";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 68);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(508, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
@@ -228,7 +231,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(6, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(410, 49);
@@ -260,6 +263,17 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Italok";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(6, 121);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(410, 49);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Ital elfogyasztás";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(6, 33);
@@ -273,10 +287,10 @@
             // 
             // lapozEgy
             // 
-            this.lapozEgy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozEgy.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lapozEgy.Location = new System.Drawing.Point(1041, 705);
             this.lapozEgy.Name = "lapozEgy";
-            this.lapozEgy.Size = new System.Drawing.Size(211, 49);
+            this.lapozEgy.Size = new System.Drawing.Size(288, 49);
             this.lapozEgy.TabIndex = 14;
             this.lapozEgy.Text = "Lapozz a(z) 000. oldalra";
             this.lapozEgy.UseVisualStyleBackColor = true;
@@ -284,10 +298,10 @@
             // 
             // lapozKetto
             // 
-            this.lapozKetto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozKetto.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lapozKetto.Location = new System.Drawing.Point(1041, 779);
             this.lapozKetto.Name = "lapozKetto";
-            this.lapozKetto.Size = new System.Drawing.Size(211, 49);
+            this.lapozKetto.Size = new System.Drawing.Size(288, 49);
             this.lapozKetto.TabIndex = 15;
             this.lapozKetto.Text = "Lapozz a(z) 000. oldalra";
             this.lapozKetto.UseVisualStyleBackColor = true;
@@ -295,10 +309,10 @@
             // 
             // lapozHarom
             // 
-            this.lapozHarom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lapozHarom.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lapozHarom.Location = new System.Drawing.Point(1041, 853);
             this.lapozHarom.Name = "lapozHarom";
-            this.lapozHarom.Size = new System.Drawing.Size(211, 49);
+            this.lapozHarom.Size = new System.Drawing.Size(288, 49);
             this.lapozHarom.TabIndex = 16;
             this.lapozHarom.Text = "Lapozz a(z) 000. oldalra";
             this.lapozHarom.UseVisualStyleBackColor = true;
@@ -307,30 +321,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 208);
+            this.label2.Location = new System.Drawing.Point(12, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // button3
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(6, 121);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(410, 49);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Ital elfogyasztás";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(1357, 705);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 49);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Tedd próbára a szerencséd";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1011);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lapozHarom);
             this.Controls.Add(this.lapozKetto);
@@ -345,9 +362,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "í";
+            this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -396,5 +414,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

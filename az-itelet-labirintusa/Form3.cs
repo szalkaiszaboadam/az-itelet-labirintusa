@@ -41,7 +41,8 @@ namespace az_itelet_labirintusa
             Height = 790;
             //this.BackColor = Color.FromArgb(0, 0, 0);
             this.BackColor = Color.FromArgb(255, 255, 255);
-
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
 
             var pfc = new PrivateFontCollection();
             pfc.AddFontFile("MedievalSharp-Regular.ttf");  //Bitmgothic.ttf
@@ -53,7 +54,7 @@ namespace az_itelet_labirintusa
 
             label2.Visible = false; 
 
-            textBox1.Font = new Font("Courier New", 12, FontStyle.Regular);
+            textBox1.Font = new Font("Courier New", 9, FontStyle.Regular);
 
             button2.Text = "Tovább";
             button2.Font = new Font("Courier New", 8, FontStyle.Regular);
@@ -70,6 +71,9 @@ namespace az_itelet_labirintusa
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
             label2.Visible = true;
             label1.Visible = false;
             textBox1.Visible = false;
@@ -97,7 +101,16 @@ namespace az_itelet_labirintusa
             //this.BackColor = Color.FromArgb(0, 0, 0);
             this.BackColor = Color.FromArgb(255, 255, 255);
 
-
+            checkBox1.ForeColor = Color.FromArgb(60, 32, 22);
+            checkBox2.ForeColor = Color.FromArgb(60, 32, 22);
+            checkBox3.ForeColor = Color.FromArgb(60, 32, 22);
+            textBox2.ForeColor = Color.FromArgb(60, 32, 22);
+            textBox1.ForeColor = Color.FromArgb(60, 32, 22);
+            label3.ForeColor = Color.FromArgb(60, 32, 22);
+            label2.ForeColor = Color.FromArgb(60, 32, 22);
+            label1.ForeColor = Color.FromArgb(60, 32, 22);
+            button2.ForeColor = Color.FromArgb(60, 32, 22);
+            button1.ForeColor = Color.FromArgb(60, 32, 22);
 
         }
 
