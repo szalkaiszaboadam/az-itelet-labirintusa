@@ -601,12 +601,15 @@ namespace az_itelet_labirintusa
             if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "Nincs")
             {
 
-                elsoEllensegUgyesseg += dobokocka() + dobokocka();
-                jelenlegiUgyesseg += dobokocka() + dobokocka();
+                
 
-                while (elsoEllensegElet <= 0 || jelenlegiEletero <= 0)
+                while (!(elsoEllensegElet <= 0 || jelenlegiEletero <= 0))
                 {
-                    if (jelenlegiUgyesseg > elsoEllensegUgyesseg)
+                    int tempElsoEllenseg = elsoEllensegUgyesseg + dobokocka() + dobokocka();
+                    int tempJatekos = jelenlegiUgyesseg + dobokocka() + dobokocka();
+
+
+                    if (tempJatekos > tempElsoEllenseg)
                     {
                         elsoEllensegElet = elsoEllensegElet - 2;
                         textBox10.Text = elsoEllensegNeve + Environment.NewLine + "Ügyessége: " + elsoEllensegUgyesseg + Environment.NewLine + "Életereje: " + elsoEllensegElet;
@@ -614,7 +617,7 @@ namespace az_itelet_labirintusa
                         //SZERENCSE HASZNÁLATA HARC KÖZBEN
                         //button3.Enabled = true;
 
-                    } else if (jelenlegiUgyesseg < elsoEllensegUgyesseg)
+                    } else if (tempJatekos < tempElsoEllenseg)
                     {
                         jelenlegiEletero = jelenlegiEletero - 2;
                         textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
@@ -624,22 +627,27 @@ namespace az_itelet_labirintusa
                         //button3.Enabled = true;
                     }
                 }
+                //elsoEllensegElet = elsoEllensegElet - 2;
+                //jelenlegiEletero = jelenlegiEletero - 2;
+                label3.Text = elsoEllensegElet.ToString();
+                label4.Text = jelenlegiEletero.ToString();
 
                 if (elsoEllensegElet <= 0)
                 {
                     jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
+                    lapozEgy.Enabled = true;
 
                 } else if (jelenlegiEletero <= 0)
                 {
-                    const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
-                    const string fejlec = "";
-                    DialogResult result = MessageBox.Show(szoveg, fejlec,
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-                    if (result == DialogResult.OK)
-                    {
-                        Application.Exit();
-                    }
+                 const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                 const string fejlec = "";
+                 DialogResult result = MessageBox.Show(szoveg, fejlec,
+                             MessageBoxButtons.OK,
+                             MessageBoxIcon.Information);
+                 if (result == DialogResult.OK)
+                 {
+                     Application.Exit();
+                 }
                 }
 
             }
