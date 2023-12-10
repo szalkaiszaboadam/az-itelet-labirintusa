@@ -55,8 +55,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -354,18 +354,9 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Harc szörnyekkel";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(6, 34);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox10.Size = new System.Drawing.Size(338, 82);
-            this.textBox10.TabIndex = 5;
-            // 
             // textBox11
             // 
+            this.textBox11.Font = new System.Drawing.Font("Courier New", 13F);
             this.textBox11.Location = new System.Drawing.Point(6, 121);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
@@ -373,6 +364,17 @@
             this.textBox11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox11.Size = new System.Drawing.Size(338, 82);
             this.textBox11.TabIndex = 6;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Courier New", 13F);
+            this.textBox10.Location = new System.Drawing.Point(6, 34);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox10.Size = new System.Drawing.Size(338, 82);
+            this.textBox10.TabIndex = 5;
             // 
             // button4
             // 
@@ -384,6 +386,7 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "Harc";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form2
             // 

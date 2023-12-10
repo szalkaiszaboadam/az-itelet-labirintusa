@@ -442,15 +442,15 @@ namespace az_itelet_labirintusa
                     groupBox9.Enabled = true;
                     textBox10.Enabled = true;
                     textBox11.Enabled = false;
-                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
                 }
                 else
                 {
                     groupBox9.Enabled = true;
                     textBox10.Enabled = true;
                     textBox11.Enabled = true;
-                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
-                    textBox11.Text = jatekFajl[jelenlegiFejezet].MasodikEllenseg + "\nÜgyessége: " + jatekFajl[jelenlegiFejezet].MasodikUgyesseg + "\nÉletereje: " + jatekFajl[jelenlegiFejezet].MasodikElet;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                    textBox11.Text = jatekFajl[jelenlegiFejezet].MasodikEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].MasodikUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].MasodikElet;
                 }
 
 
@@ -583,6 +583,68 @@ namespace az_itelet_labirintusa
                 textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
                 button3.Enabled = false;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string elsoEllensegNeve = jatekFajl[jelenlegiFejezet].ElsoEllenseg;
+            int elsoEllensegUgyesseg = jatekFajl[jelenlegiFejezet].ElsoUgyesseg;
+            int elsoEllensegElet = jatekFajl[jelenlegiFejezet].ElsoElet;
+
+            if (jatekFajl[jelenlegiFejezet].MasodikEllenseg != "Nincs")
+            {
+                string masodikEllensegNeve = jatekFajl[jelenlegiFejezet].MasodikEllenseg;
+                int masodikEllensegUgyesseg = jatekFajl[jelenlegiFejezet].MasodikUgyesseg;
+                int masodikEllensegElet = jatekFajl[jelenlegiFejezet].MasodikElet;
+            }
+
+            if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "Nincs")
+            {
+
+                elsoEllensegUgyesseg += dobokocka() + dobokocka();
+                jelenlegiUgyesseg += dobokocka() + dobokocka();
+
+                while (elsoEllensegElet <= 0 || jelenlegiEletero <= 0)
+                {
+                    if (jelenlegiUgyesseg > elsoEllensegUgyesseg)
+                    {
+                        elsoEllensegElet = elsoEllensegElet - 2;
+                        textBox10.Text = elsoEllensegNeve + Environment.NewLine + "Ügyessége: " + elsoEllensegUgyesseg + Environment.NewLine + "Életereje: " + elsoEllensegElet;
+                    
+                        //SZERENCSE HASZNÁLATA HARC KÖZBEN
+                        //button3.Enabled = true;
+
+                    } else if (jelenlegiUgyesseg < elsoEllensegUgyesseg)
+                    {
+                        jelenlegiEletero = jelenlegiEletero - 2;
+                        textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+                        textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+                        textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+                        //SZERENCSE HASZNÁLATA HARC KÖZBEN
+                        //button3.Enabled = true;
+                    }
+                }
+
+                if (elsoEllensegElet <= 0)
+                {
+                    jelenlegiFejezet = jatekFajl[jelenlegiFejezet].ElsoLepes;
+
+                } else if (jelenlegiEletero <= 0)
+                {
+                    const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                    const string fejlec = "";
+                    DialogResult result = MessageBox.Show(szoveg, fejlec,
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                    if (result == DialogResult.OK)
+                    {
+                        Application.Exit();
+                    }
+                }
+
+            }
+
+        
         }
     }
 }

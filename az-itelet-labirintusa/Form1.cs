@@ -50,6 +50,7 @@ namespace az_itelet_labirintusa
             //label3.BackColor = System.Drawing.Color.Transparent;
             button1.ForeColor = Color.FromArgb(60, 32, 22);
             button2.ForeColor = Color.FromArgb(60, 32, 22);
+            label5.ForeColor = Color.FromArgb(60, 32, 22);
 
 
             button1.Font = new Font("Courier New", 8, FontStyle.Regular);
