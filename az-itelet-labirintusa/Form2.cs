@@ -426,6 +426,14 @@ namespace az_itelet_labirintusa
                 textBox7.Text = arany.ToString() + " Arany";
             }*/
 
+           /*if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
+            {
+                int tempEleteroVesztes = dobokocka();
+
+                jelenlegiEletero = jelenlegiEletero - tempEleteroVesztes;
+                textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            }*/
+
 
             if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
             {
@@ -435,7 +443,7 @@ namespace az_itelet_labirintusa
 
                 button3.Enabled = true;
 
-            } else if (jatekFajl[jelenlegiFejezet].ElsoEllenseg != "Nincs")
+            } else if (jatekFajl[jelenlegiFejezet].ElsoEllenseg != "null") //null
             {
 
                 lapozEgy.Enabled = false;
@@ -448,7 +456,7 @@ namespace az_itelet_labirintusa
                 button4.Enabled = true;
                 button5.Enabled = true;
 
-                if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "Nincs")
+                if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "null") //null
                 {
                     groupBox9.Enabled = true;
                     textBox10.Enabled = true;
@@ -604,7 +612,7 @@ namespace az_itelet_labirintusa
             int elsoEllensegUgyesseg = jatekFajl[jelenlegiFejezet].ElsoUgyesseg;
             int elsoEllensegElet = jatekFajl[jelenlegiFejezet].ElsoElet;
 
-            if (jatekFajl[jelenlegiFejezet].MasodikEllenseg != "Nincs")
+            if (jatekFajl[jelenlegiFejezet].MasodikEllenseg != "null") //null
             {
                 string masodikEllensegNeve = jatekFajl[jelenlegiFejezet].MasodikEllenseg;
                 int masodikEllensegUgyesseg = jatekFajl[jelenlegiFejezet].MasodikUgyesseg;

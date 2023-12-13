@@ -1,5 +1,0 @@
-Játék szövege/Játéknak vége?/Van ellenség?/Lapozz 1./Lapozz 2./ Lapozz 3./Életerő vesztés/Szerencse vesztés/probaszerencse
-                             ^^^^^^^^^^^^^
-
-
-/első ellenség neve/első ellenség életereje/első ellenség ügyessége/második ellenség neve/második ellenség életereje/második ellenség ügyessége/egyszerre vagy különkülön küzdesz meg velük
