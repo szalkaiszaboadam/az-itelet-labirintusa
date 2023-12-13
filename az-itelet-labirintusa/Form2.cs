@@ -494,11 +494,493 @@ namespace az_itelet_labirintusa
 
         private void lapozKetto_Click(object sender, EventArgs e)
         {
+            /*if (jelenlegiEletero == eredetiEletero)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            } 
+
+            if (jelenlegiEletero < eredetiEletero)
+            {
+                textBox6.Enabled = true;
+                button1.Enabled = true;
+            }*/
+
+            /* if (elelem == 0)
+             {
+                 textBox6.Enabled = false;
+                 button1.Enabled = false;
+             }
+             else
+             {
+                 textBox6.Enabled = true;
+                 button1.Enabled = true;
+             }*/
+
+
+            if (jatekFajl[jelenlegiFejezet].JatekVege == "true")
+            {
+                const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                const string fejlec = "";
+                DialogResult result = MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+
+
+            textBox10.Text = "";
+            textBox11.Text = "";
+            lapozEgy.Text = "";
+            lapozKetto.Text = "";
+            lapozHarom.Text = "";
+
+            if (jatekFajl[jelenlegiFejezet].EleteroVesztes != 0)
+            {
+                jelenlegiEletero = jelenlegiEletero - jatekFajl[jelenlegiFejezet].EleteroVesztes;
+            }
+
+            if (jatekFajl[jelenlegiFejezet].SzerencseVesztes != 0)
+            {
+                jelenlegiSzerencse = jelenlegiSzerencse - jatekFajl[jelenlegiFejezet].SzerencseVesztes;
+            }
+
+            if (jelenlegiEletero <= 0)
+            {
+                const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                const string fejlec = "";
+                DialogResult result = MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+
+
+            label2.Text = jelenlegiFejezet.ToString();
+
+
+            if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
+            {
+                lapozKetto.Enabled = true;
+                lapozKetto.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
+            }
+
+            if (jatekFajl[jelenlegiFejezet].HarmadikLepes != 0)
+            {
+                lapozHarom.Enabled = true;
+                lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].HarmadikLepes + ". lapodra";
+            }
+
+
+            if (jatekFajl[jelenlegiFejezet].ElsoLepes != 0)
+            {
+                lapozEgy.Enabled = true;
+                lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
+            }
+
+
+
+
+            if (jelenlegiEletero == eredetiEletero)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            }
+
+            if (jelenlegiEletero < eredetiEletero)
+            {
+                textBox6.Enabled = true;
+                button1.Enabled = true;
+            }
+
+            if (elelem == 0)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            }
+
+
+            if (valasztottItal == "Ügyesség")
+            {
+                if (jelenlegiUgyesseg == eredetiUgyesseg)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiUgyesseg < eredetiUgyesseg)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+
+            if (valasztottItal == "Életerő")
+            {
+                if (jelenlegiEletero == eredetiEletero)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiEletero < eredetiEletero)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (valasztottItal == "Szerencse")
+            {
+                if (jelenlegiSzerencse == eredetiSzerencse)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiSzerencse < eredetiSzerencse)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (italDarab == 0)
+            {
+                textBox9.Enabled = false;
+                button2.Enabled = false;
+            }
+
+            textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
+
+            textBox6.Text = elelem.ToString() + " Élelem";
+            textBox4.Text = String.Join(Environment.NewLine, felszereles);
+            textBox7.Text = arany.ToString() + " Arany";
+
+            textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+            textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+
+            textBox9.Text = "2/" + italDarab + " " + valasztottItal;
+
+            if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
+            {
+                arany += Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller);
+                textBox7.Text = arany.ToString() + " Arany";
+            }
+
+            if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
+            {
+                int tempEleteroVesztes = dobokocka();
+
+                jelenlegiEletero = jelenlegiEletero - tempEleteroVesztes;
+                textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            }
+
+
+            if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
+            {
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                lapozHarom.Enabled = false;
+
+                button3.Enabled = true;
+
+            }
+            else if (jatekFajl[jelenlegiFejezet].ElsoEllenseg != "null") //null
+            {
+
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                button1.Enabled = false;
+                lapozHarom.Enabled = false;
+                button3.Visible = false;
+
+
+                button4.Enabled = true;
+
+                if (jatekFajl[jelenlegiFejezet].Szoveg.Contains("Elmenekülhetsz"))
+                {
+                    button5.Enabled = true;
+                }
+
+
+                if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "null") //null
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = false;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                }
+                else
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = true;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                    textBox11.Text = jatekFajl[jelenlegiFejezet].MasodikEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].MasodikUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].MasodikElet;
+                }
+
+
+
+
+
+            }
+
+            else if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == false)
+            {
+                jelenlegiFejezet = jatekFajl[jelenlegiFejezet].MasodikLepes;
+            }
 
         }
 
         private void lapozHarom_Click(object sender, EventArgs e)
         {
+            /*if (jelenlegiEletero == eredetiEletero)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            } 
+
+            if (jelenlegiEletero < eredetiEletero)
+            {
+                textBox6.Enabled = true;
+                button1.Enabled = true;
+            }*/
+
+            /* if (elelem == 0)
+             {
+                 textBox6.Enabled = false;
+                 button1.Enabled = false;
+             }
+             else
+             {
+                 textBox6.Enabled = true;
+                 button1.Enabled = true;
+             }*/
+
+
+            if (jatekFajl[jelenlegiFejezet].JatekVege == "true")
+            {
+                const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                const string fejlec = "";
+                DialogResult result = MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+
+
+            textBox10.Text = "";
+            textBox11.Text = "";
+            lapozEgy.Text = "";
+            lapozKetto.Text = "";
+            lapozHarom.Text = "";
+
+            if (jatekFajl[jelenlegiFejezet].EleteroVesztes != 0)
+            {
+                jelenlegiEletero = jelenlegiEletero - jatekFajl[jelenlegiFejezet].EleteroVesztes;
+            }
+
+            if (jatekFajl[jelenlegiFejezet].SzerencseVesztes != 0)
+            {
+                jelenlegiSzerencse = jelenlegiSzerencse - jatekFajl[jelenlegiFejezet].SzerencseVesztes;
+            }
+
+            if (jelenlegiEletero <= 0)
+            {
+                const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
+                const string fejlec = "";
+                DialogResult result = MessageBox.Show(szoveg, fejlec,
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+
+
+            label2.Text = jelenlegiFejezet.ToString();
+
+
+            if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
+            {
+                lapozKetto.Enabled = true;
+                lapozKetto.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
+            }
+
+            if (jatekFajl[jelenlegiFejezet].HarmadikLepes != 0)
+            {
+                lapozHarom.Enabled = true;
+                lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].HarmadikLepes + ". lapodra";
+            }
+
+
+            if (jatekFajl[jelenlegiFejezet].ElsoLepes != 0)
+            {
+                lapozEgy.Enabled = true;
+                lapozEgy.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].ElsoLepes + ". lapodra";
+            }
+
+
+
+
+            if (jelenlegiEletero == eredetiEletero)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            }
+
+            if (jelenlegiEletero < eredetiEletero)
+            {
+                textBox6.Enabled = true;
+                button1.Enabled = true;
+            }
+
+            if (elelem == 0)
+            {
+                textBox6.Enabled = false;
+                button1.Enabled = false;
+            }
+
+
+            if (valasztottItal == "Ügyesség")
+            {
+                if (jelenlegiUgyesseg == eredetiUgyesseg)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiUgyesseg < eredetiUgyesseg)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+
+            if (valasztottItal == "Életerő")
+            {
+                if (jelenlegiEletero == eredetiEletero)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiEletero < eredetiEletero)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (valasztottItal == "Szerencse")
+            {
+                if (jelenlegiSzerencse == eredetiSzerencse)
+                {
+                    textBox9.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (jelenlegiSzerencse < eredetiSzerencse)
+                {
+                    textBox9.Enabled = true;
+                    button2.Enabled = true;
+                }
+            }
+
+            if (italDarab == 0)
+            {
+                textBox9.Enabled = false;
+                button2.Enabled = false;
+            }
+
+            textBox1.Text = jatekFajl[jelenlegiFejezet].Szoveg;
+
+            textBox6.Text = elelem.ToString() + " Élelem";
+            textBox4.Text = String.Join(Environment.NewLine, felszereles);
+            textBox7.Text = arany.ToString() + " Arany";
+
+            textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            textBox2.Text = eredetiUgyesseg + "/" + jelenlegiUgyesseg;
+            textBox3.Text = eredetiSzerencse + "/" + jelenlegiSzerencse;
+
+            textBox9.Text = "2/" + italDarab + " " + valasztottItal;
+
+            if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
+            {
+                arany += Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller);
+                textBox7.Text = arany.ToString() + " Arany";
+            }
+
+            if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
+            {
+                int tempEleteroVesztes = dobokocka();
+
+                jelenlegiEletero = jelenlegiEletero - tempEleteroVesztes;
+                textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
+            }
+
+
+            if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
+            {
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                lapozHarom.Enabled = false;
+
+                button3.Enabled = true;
+
+            }
+            else if (jatekFajl[jelenlegiFejezet].ElsoEllenseg != "null") //null
+            {
+
+                lapozEgy.Enabled = false;
+                lapozKetto.Enabled = false;
+                button1.Enabled = false;
+                lapozHarom.Enabled = false;
+                button3.Visible = false;
+
+
+                button4.Enabled = true;
+
+                if (jatekFajl[jelenlegiFejezet].Szoveg.Contains("Elmenekülhetsz"))
+                {
+                    button5.Enabled = true;
+                }
+
+
+                if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "null") //null
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = false;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                }
+                else
+                {
+                    groupBox9.Enabled = true;
+                    textBox10.Enabled = true;
+                    textBox11.Enabled = true;
+                    textBox10.Text = jatekFajl[jelenlegiFejezet].ElsoEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].ElsoUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].ElsoElet;
+                    textBox11.Text = jatekFajl[jelenlegiFejezet].MasodikEllenseg + Environment.NewLine + "Ügyessége: " + jatekFajl[jelenlegiFejezet].MasodikUgyesseg + Environment.NewLine + "Életereje: " + jatekFajl[jelenlegiFejezet].MasodikElet;
+                }
+
+
+
+
+
+            }
+
+            else if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == false)
+            {
+                jelenlegiFejezet = jatekFajl[jelenlegiFejezet].HarmadikLepes;
+            }
 
         }
 
