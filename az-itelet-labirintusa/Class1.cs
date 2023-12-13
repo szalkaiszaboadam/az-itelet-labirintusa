@@ -9,9 +9,30 @@ namespace az_itelet_labirintusa/*.Resources*/
 {
     internal class Class1
     {
+        /*
+        private string szoveg;
+        priavte string jatekVege;
+        private bool probaSzerencse;
+        private bool kulcs;
+        private bool dobokockaDobas; private string aranytaller;
+        private string elsoEllenseg;
+        private int elsoUgyesseg;
+        private int elsoElet;
+        private string masodikEllenseg;
+        private int masodikUgyesseg;
+        private int masodikElet;
+        private int elsoLepes;
+        private int masodikLepes;
+        private int harmadikLepes;
+        private int eleteroVesztes;
+        private int szerencseVesztes;
+        private bool eleteroDobas
+        //
+        //
+        */
         private string szoveg;
         private string jatekVege;
-        private int ellenseg;
+        private int ellenseg;//
         private int elsoLepes;
         private int masodikLepes;
         private int harmadikLepes;
@@ -24,7 +45,7 @@ namespace az_itelet_labirintusa/*.Resources*/
         private string masodikEllenseg;
         private int masodikElet;
         private int masodikUgyesseg;
-        private string egyszerreKulon;
+        private string egyszerreKulon;//
 
         public Class1(string sor)
         {

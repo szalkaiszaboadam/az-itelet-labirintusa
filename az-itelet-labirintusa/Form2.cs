@@ -420,7 +420,11 @@ namespace az_itelet_labirintusa
 
             textBox9.Text = "2/" + italDarab + " " + valasztottItal;
 
-
+           /*if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
+            {
+                arany +=  Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller);
+                textBox7.Text = arany.ToString() + " Arany";
+            }*/
 
 
             if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
@@ -606,8 +610,8 @@ namespace az_itelet_labirintusa
                 int masodikEllensegUgyesseg = jatekFajl[jelenlegiFejezet].MasodikUgyesseg;
                 int masodikEllensegElet = jatekFajl[jelenlegiFejezet].MasodikElet;
 
-                if (jatekFajl[jelenlegiFejezet].EgyszerreKulon == "kulon")
-                {
+               // if (jatekFajl[jelenlegiFejezet].EgyszerreKulon == "kulon")
+                //{
                     while (!(elsoEllensegElet <= 0 || jelenlegiEletero <= 0))
                     {
                         int tempElsoEllenseg = elsoEllensegUgyesseg + dobokocka() + dobokocka();
@@ -698,7 +702,7 @@ namespace az_itelet_labirintusa
 
 
                         }
-                        else if (jelenlegiEletero <= 0)
+                        /*else if (jelenlegiEletero <= 0)
                         {
                             const string szoveg = "A játék számodra most véget ért! Vágj neki újra!";
                             const string fejlec = "";
@@ -709,10 +713,10 @@ namespace az_itelet_labirintusa
                             {
                                 Application.Exit();
                             }
-                        }
+                        }*/
                     }
-                }
-                else if (jatekFajl[jelenlegiFejezet].EgyszerreKulon == "egyszerre")
+                //}
+                /*else if (jatekFajl[jelenlegiFejezet].EgyszerreKulon == "egyszerre")
                 {
 
                     while (!((elsoEllensegElet <= 0 && masodikEllensegElet <= 0) || jelenlegiEletero <= 0))
@@ -773,7 +777,7 @@ namespace az_itelet_labirintusa
                     }
 
 
-                   }
+                   }*/
 
 
                     }
@@ -844,7 +848,7 @@ namespace az_itelet_labirintusa
                 }
  /*   }
 }*/
-private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
 
             jelenlegiEletero = jelenlegiEletero - 2;
