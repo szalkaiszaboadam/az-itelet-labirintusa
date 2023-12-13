@@ -53,8 +53,8 @@ namespace test_labirintusgame
             static void Main(string[] args)
             {
                 #region file beolvasás 
-                modul[] modulok = new modul[250];
-                StreamReader olvas = new StreamReader("szoveg_teszt.txt");
+                modul[] modulok = new modul[201];
+                StreamReader olvas = new StreamReader("szoveg.txt");
                 int length = 1;
                 
                 while (!olvas.EndOfStream)
@@ -65,8 +65,9 @@ namespace test_labirintusgame
                 
                 olvas.Close();
                 Console.WriteLine("kész!");
+
                 #endregion
-                
+
 
                 Console.ReadKey();  
             }
