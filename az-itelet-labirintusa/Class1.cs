@@ -9,9 +9,9 @@ namespace az_itelet_labirintusa/*.Resources*/
 {
     internal class Class1
     {
-        /*
+        
         private string szoveg;
-        priavte string jatekVege;
+        private string jatekVege;
         private bool probaSzerencse;
         private bool kulcs;
         private string aranytaller; //private bool dobokockaDobas; 
@@ -26,14 +26,14 @@ namespace az_itelet_labirintusa/*.Resources*/
         private int harmadikLepes;
         private int eleteroVesztes;
         private int szerencseVesztes;
-        private bool eleteroDobas
+        private bool eleteroDobas;
         //
         //
 
-        */
+        
 
 
-        private string szoveg;
+        /*private string szoveg;
         private string jatekVege;
         private int ellenseg;//
         private int elsoLepes;
@@ -48,12 +48,12 @@ namespace az_itelet_labirintusa/*.Resources*/
         private string masodikEllenseg;
         private int masodikElet;
         private int masodikUgyesseg;
-        private string egyszerreKulon;//
+        private string egyszerreKulon;//*/
 
         public Class1(string sor)
         {
             string[] d = sor.Split('/');
-            szoveg = d[0];
+           /* szoveg = d[0];
             jatekVege = d[1];
             ellenseg = Convert.ToInt32(d[2]);
             elsoLepes = Convert.ToInt32(d[3]);
@@ -68,9 +68,9 @@ namespace az_itelet_labirintusa/*.Resources*/
             masodikEllenseg = d[12];
             masodikElet = Convert.ToInt32(d[13]);
             masodikUgyesseg = Convert.ToInt32(d[14]);
-            egyszerreKulon = d[15];
+            egyszerreKulon = d[15];*/
 
-            /*szoveg = d[0];
+            szoveg = d[0];
             jatekVege = d[1];
             probaSzerencse = Convert.ToBoolean(d[2]);
             kulcs = Convert.ToBoolean(d[3]);
@@ -86,11 +86,11 @@ namespace az_itelet_labirintusa/*.Resources*/
             harmadikLepes = Convert.ToInt32(d[13]);
             eleteroVesztes = Convert.ToInt32(d[14]);
             szerencseVesztes = Convert.ToInt32(d[15]);
-            eleteroDobas = Convert.ToBoolean(d[16]);*/
+            eleteroDobas = Convert.ToBoolean(d[16]);
 
         }
     
-        /*
+        
         public string Szoveg { get => szoveg; set => szoveg = value; }
         public string JatekVege { get => jatekVege; set => jatekVege = value; }
         public bool ProbaSzerencse { get => probaSzerencse; set => probaSzerencse = value; }
@@ -108,10 +108,10 @@ namespace az_itelet_labirintusa/*.Resources*/
         public int EleteroVesztes { get => eleteroVesztes; set => eleteroVesztes = value; }
         public int SzerencseVesztes { get => szerencseVesztes; set => szerencseVesztes = value; }
         public bool EleteroDobas { get => eleteroDobas; set => eleteroDobas = value; }
-        */
+        
 
 
-        public string Szoveg { get => szoveg; set => szoveg = value; }
+       /* public string Szoveg { get => szoveg; set => szoveg = value; }
         public string JatekVege { get => jatekVege; set => jatekVege = value; }
         public int Ellenseg { get => ellenseg; set => ellenseg = value; }
         public int ElsoLepes { get => elsoLepes; set => elsoLepes = value; }
@@ -131,6 +131,6 @@ namespace az_itelet_labirintusa/*.Resources*/
         public int MasodikElet { get => masodikElet; set => masodikElet = value; }
         public int MasodikUgyesseg { get => masodikUgyesseg; set => masodikUgyesseg = value; }
 
-        public string EgyszerreKulon { get => egyszerreKulon; set => egyszerreKulon = value; }
+        public string EgyszerreKulon { get => egyszerreKulon; set => egyszerreKulon = value; }*/
     }
 }

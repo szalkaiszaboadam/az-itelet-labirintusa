@@ -115,7 +115,8 @@ namespace az_itelet_labirintusa
 
 
 
-            StreamReader sr = new StreamReader("teszt.txt", Encoding.UTF8);
+            //StreamReader sr = new StreamReader("teszt.txt", Encoding.UTF8);
+            StreamReader sr = new StreamReader("szoveg.txt", Encoding.UTF8);
             //sr.ReadLine();
             string sor = "1";
             while (!sr.EndOfStream)
@@ -327,7 +328,7 @@ namespace az_itelet_labirintusa
             if (jatekFajl[jelenlegiFejezet].HarmadikLepes != 0)
             {
                 lapozHarom.Enabled = true;
-                lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].MasodikLepes + ". lapodra";
+                lapozHarom.Text = "Lapozz a(z) " + jatekFajl[jelenlegiFejezet].HarmadikLepes + ". lapodra";
             }
 
 
@@ -420,19 +421,19 @@ namespace az_itelet_labirintusa
 
             textBox9.Text = "2/" + italDarab + " " + valasztottItal;
 
-           /*if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
+           if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
             {
                 arany +=  Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller);
                 textBox7.Text = arany.ToString() + " Arany";
-            }*/
+            }
 
-           /*if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
+           if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
             {
                 int tempEleteroVesztes = dobokocka();
 
                 jelenlegiEletero = jelenlegiEletero - tempEleteroVesztes;
                 textBox5.Text = eredetiEletero + "/" + jelenlegiEletero;
-            }*/
+            }
 
 
             if (jatekFajl[jelenlegiFejezet].ProbaSzerencse == true)
@@ -454,7 +455,12 @@ namespace az_itelet_labirintusa
 
 
                 button4.Enabled = true;
-                button5.Enabled = true;
+
+                if (jatekFajl[jelenlegiFejezet].Szoveg.Contains("Elmenekülhetsz"))
+                {
+                    button5.Enabled = true;
+                }
+                
 
                 if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "null") //null
                 {
@@ -790,7 +796,7 @@ namespace az_itelet_labirintusa
 
                     }
 
-                    if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "Nincs")
+                    if (jatekFajl[jelenlegiFejezet].MasodikEllenseg == "null")
                     {
 
 
