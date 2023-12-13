@@ -24,3 +24,16 @@ C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
 C:\Users\Szalkai-Szabó Ádám\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources
 C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.exe.config
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.exe
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.pdb
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.AssemblyReference.cache
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.SuggestedBindingRedirects.cache
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form1.resources
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form2.resources
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Form3.resources
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az_itelet_labirintusa.Properties.Resources.resources
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.GenerateResource.cache
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.CoreCompileInputs.cache
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
+D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
