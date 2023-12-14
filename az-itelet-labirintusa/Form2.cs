@@ -1186,6 +1186,8 @@ namespace az_itelet_labirintusa
                         }
                         else if (jelenlegiEletero <= 0)
                         {
+                        textBox10.Text += Environment.NewLine + "A szörny legyőzött téged!";
+                        textBox11.Text += Environment.NewLine + "A szörny legyőzött téged!";
                             const string szoveg2 = "A játék számodra most véget ért! Vágj neki újra!";
                             const string fejlec2 = "";
                             DialogResult result2 = MessageBox.Show(szoveg2, fejlec2,
