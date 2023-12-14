@@ -37,3 +37,7 @@ D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-la
 D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.csproj.CoreCompileInputs.cache
 D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe
 D:\Nagy_Gabor\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.pdb
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.exe.manifest
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\bin\Debug\az-itelet-labirintusa.application
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.exe.manifest
+C:\Users\Szalkai-SzaboAdam\Documents\GitHub\az-itelet-labirintusa\az-itelet-labirintusa\obj\Debug\az-itelet-labirintusa.application
