@@ -52,7 +52,6 @@
             this.lapozEgy = new System.Windows.Forms.Button();
             this.lapozKetto = new System.Windows.Forms.Button();
             this.lapozHarom = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -321,16 +320,6 @@
             this.lapozHarom.UseVisualStyleBackColor = true;
             this.lapozHarom.Click += new System.EventHandler(this.lapozHarom_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 219);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button3
             // 
             this.button3.Enabled = false;
@@ -412,7 +401,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lapozHarom);
             this.Controls.Add(this.lapozKetto);
             this.Controls.Add(this.lapozEgy);
@@ -477,7 +465,6 @@
         private System.Windows.Forms.Button lapozEgy;
         private System.Windows.Forms.Button lapozKetto;
         private System.Windows.Forms.Button lapozHarom;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

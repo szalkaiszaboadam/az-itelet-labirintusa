@@ -197,7 +197,7 @@ namespace az_itelet_labirintusa
             lapozEgy.Text = "Lapozz a(z) " + jatekFajl[1].ElsoLepes + ". lapodra";
             jelenlegiFejezet = jatekFajl[1].ElsoLepes;
 
-            label2.Text = jelenlegiFejezet.ToString();
+            //label2.Text = jelenlegiFejezet.ToString();
 
 
             if (valasztottItal == "Ügyesség")
@@ -316,7 +316,7 @@ namespace az_itelet_labirintusa
             }
 
 
-            label2.Text = jelenlegiFejezet.ToString();
+            //label2.Text = jelenlegiFejezet.ToString();
 
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
@@ -562,7 +562,7 @@ namespace az_itelet_labirintusa
             }
 
 
-            label2.Text = jelenlegiFejezet.ToString();
+            //label2.Text = jelenlegiFejezet.ToString();
 
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
@@ -808,7 +808,7 @@ namespace az_itelet_labirintusa
             }
 
 
-            label2.Text = jelenlegiFejezet.ToString();
+            //label2.Text = jelenlegiFejezet.ToString();
 
 
             if (jatekFajl[jelenlegiFejezet].MasodikLepes != 0)
@@ -916,7 +916,7 @@ namespace az_itelet_labirintusa
             if (jatekFajl[jelenlegiFejezet].Aranytaller != "false")
             {
                 arany += Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller);
-                textBox7.Text = arany.ToString() + " Arany";
+                textBox7.Text = arany.ToString() + " Arany" + Environment.NewLine + "Kaptál " + Convert.ToInt32(jatekFajl[jelenlegiFejezet].Aranytaller) + " aranyat";
             }
 
             if (jatekFajl[jelenlegiFejezet].EleteroDobas == true)
